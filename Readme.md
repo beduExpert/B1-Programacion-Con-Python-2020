@@ -10,13 +10,16 @@
 
  ### ORGANIZACIÓN DE MÓDULO 
  
- - [Sesión 1](): Crea tu primera aplicación con python 
- - [Sesión 2](): Estructuras de datos y funciones
- - [Sesión 3](): Modulos y paquetes
- - [Sesión 4](): Programación Orientada a Objetos I
- - [Sesión 5](): Programación Orientada a Objetos II
- - [Sesión 6](): Manipulación de archivos, JSON, CSV
- - [Sesión 7](): Flask
- - [Sesión 8](): Testing
+ - [Sesión 1](Sesion-01): Crea tu primera aplicación con python 
+ - [Sesión 2](Sesion-02): Estructuras de datos y funciones
+ - [Sesión 3](Sesion-03): Modulos y paquetes
+ - [Sesión 4](Sesion-04): Programación Orientada a Objetos I
+ - [Sesión 5](Sesion-05): Programación Orientada a Objetos II
+ - [Sesión 6](Sesion-06): Manipulación de archivos, JSON, CSV
+ - [Sesión 7](Sesion-07): Flask
+ - [Sesión 8](Sesion-08): Testing
+ - [Prueba](Sesion-01/Ejemplo-01): Testing
+
+
 
 
