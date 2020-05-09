@@ -12,8 +12,21 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Introducción e instalación
 
 	- [Ejemplo 01](Ejemplo-01)
+
+- Variables y tipos de datos
+	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 01](Reto-01)
+
+- Operadores lógicos y algebraicos
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 02](Reto-02)
+
+-Cadenas de texto
+	- [Ejemplo]()
+	- [Reto]()
+
+-Postwork(Postwork)
 
