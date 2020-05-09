@@ -1,11 +1,14 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
 
-## Titulo de la Sesion 
+## Crea tu primera aplicación con python 
 
 ### OBJETIVOS 
+- Conocer la sintaxis básica de Python.
+- Utilizar variables y tipos  de datos; operadores lógicos y condicionales.
+- Crear sus primeros programas en Python.
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+ 
 
 #### ORGANIZACION DE LA CLASE 
 
