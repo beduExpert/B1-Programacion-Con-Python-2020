@@ -6,7 +6,10 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Crea un programa que solicite 2 numeros e imprima los siguientes resultados
+	- Resta usando el operador -
+	- Modulo usando el operador %
+	
 
 #### REQUISITOS 
 

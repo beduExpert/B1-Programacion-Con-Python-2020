@@ -4,20 +4,26 @@
 
 operando1 = 6
 operando2  = 10
+incremento = 1
 
+# Operadores aritmeticos
 suma = operando1 + operando2
 print("La suma de los valores es:")
 print(suma)
 
 producto = operando1 * operando2
-print("El resultado de la muktiplicacion es")
+print("El resultado de la multiplicacion es")
 print(producto)
 
-
-resta = operando1 * operando2
-print("El resultado de la muktiplicacion es")
+producto = operando1 / operando2
+print("El división de la multiplicacion es")
 print(producto)
 
+incremento += 1
+print("El resultado es")
+print(incremento)
+
+#Operadores aritméticos
 operando3 = True
 operando4 = False
 
