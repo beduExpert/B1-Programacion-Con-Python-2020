@@ -18,7 +18,7 @@
  - [Sesión 6](Sesion-06): Manipulación de archivos, JSON, CSV
  - [Sesión 7](Sesion-07): Flask
  - [Sesión 8](Sesion-08): Testing
- - [Prueba](Sesion-01/Ejemplo-01): Testing
+
 
 
 
