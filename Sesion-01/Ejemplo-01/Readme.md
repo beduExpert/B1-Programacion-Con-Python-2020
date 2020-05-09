@@ -5,8 +5,7 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
-
+- El alumno conocerá la sintaxis básica de Python, además podrá verificar la correcta instalación de si entorno de desarrollo.
 #### REQUISITOS
 
 1. Lo necesario para desarrollar el ejemplo o el Reto

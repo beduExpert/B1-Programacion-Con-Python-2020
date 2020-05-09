@@ -2,7 +2,11 @@
 ## Módulo: Nombre del modulo
 
 ### OBJETIVO 
- - Agrega lo que van a aprender en el modulo
+ - Conocer la sintaxis básica de Python (estructuras de datos, funciones, módulos, clases, entre otros).
+ -Utiliza variables y tipos de datos; operadores lógicos y condiciones, así como ciclos de control.
+ -Asimismo, utiliza la programación orientada a objetos, escritura y lectura de archivos.
+ -Utilizar herramientas de testing.
+
 
  ### ORGANIZACIÓN DE MÓDULO 
  
