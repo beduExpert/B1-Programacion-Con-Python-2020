@@ -8,7 +8,7 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 - Lo que esperamos que el alumno aprenda
 
 #### REQUISITOS
-
+git 
 1. Lo necesario para desarrollar el ejemplo o el Reto
 
 #### DESARROLLO
