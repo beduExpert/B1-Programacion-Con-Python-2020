@@ -24,9 +24,9 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 02](Reto-02)
 
--Cadenas de texto
-	- [Ejemplo]()
-	- [Reto]()
+- Cadenas de texto
+	- [Ejemplo 04](Ejemplo-04)
+	- [Reto 03](Reto-03)
 
--Postwork(Postwork)
+- Postwork(Postwork)
 

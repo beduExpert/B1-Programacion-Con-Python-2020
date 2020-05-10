@@ -1,4 +1,13 @@
-print("¿Cómo se llama? ", end="")
-nombre = input()
-print(f"Me alegro de conocerle, {nombre}")
-print(type(nombre))
+print("inserta número")
+a = input()
+print("inserta otro número") 
+b = input()
+
+num1 = int(a)
+num2 = int(b)
+
+concatena = a+b
+suma = num1+num2
+
+print(concatena)
+print(suma)

@@ -1,10 +1,7 @@
-"""
-@author: Luis Antonio Menéndez Salazar
-"""
 
 operando1 = 6
 operando2  = 10
-incremento = 1
+incremento = 0
 
 # Operadores aritmeticos
 suma = operando1 + operando2
@@ -23,7 +20,7 @@ incremento += 1
 print("El resultado es")
 print(incremento)
 
-#Operadores aritméticos
+#Operadores lógicos
 operando3 = True
 operando4 = False
 
