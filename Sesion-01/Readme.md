@@ -7,6 +7,7 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 - Conocer la sintaxis básica de Python.
 - Utilizar variables y tipos  de datos; operadores lógicos y condicionales.
 - Crear sus primeros programas en Python.
+- Hacer uso de condicionales.
 
  
 
@@ -27,6 +28,12 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 - Cadenas de texto
 	- [Ejemplo 04](Ejemplo-04)
 	- [Reto 03](Reto-03)
+
+- Estructuras condicionales
+	- [Ejemplo 05](Ejemplo-05)
+	- [Reto 04](Reto-04)
+
+
 
 - Postwork(Postwork)
 
