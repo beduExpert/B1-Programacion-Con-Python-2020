@@ -15,15 +15,21 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 #### DESARROLLO
 Tipos de datos en Python.
 - Numéricos:   
+
         - int: Números enteros
+
         - float: Números con punto flotante
+
         - complex: Numeros complejos
 
 - Texto:
+
         - string
 
 - Booleanos:
+
         - True
+        
         - False
 
 El programa conversion_de_datos.py Aborda los distintos tipos de datos en Python.
