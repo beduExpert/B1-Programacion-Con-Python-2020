@@ -13,6 +13,19 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 1. Python 3
 
 #### DESARROLLO
+Tipos de datos en Python.
+- Numéricos:   
+        - int: Números enteros
+        - float: Números con punto flotante
+        - complex: Numeros complejos
+
+- Texto:
+        - string
+
+- Booleanos:
+        - True
+        - False
+
 El programa conversion_de_datos.py Aborda los distintos tipos de datos en Python.
 
 La función type() retorna el tipo de dato de la variable que tenga como argumento.
@@ -46,6 +59,7 @@ print("Es de tipo:")
 print(type(verdadero))
 ```
 El programa tipos_de_dato.py muestra como realizar cast para manipular el tipo de dato de una variable.
+
 int() Cambia a tipo entero.
 
 float() Cambia a tipo float.
