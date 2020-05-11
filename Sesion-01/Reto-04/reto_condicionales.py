@@ -1,5 +1,16 @@
-#ADD reto condicionales
-print("inserta un numero")
-num = int(input())
-if num%2 == 0:
-    print("El numero es divisible entre 2")
+print("Qué topping quieres en tu helado?")
+topping = input()
+
+if topping == "oreo":
+    precio = 19
+elif topping == "m&m":
+    precio = 25
+elif topping == "fresas":
+    precio = 22
+elif topping  == "brownie":
+    precio = 28
+else:
+    print("producto no disponible")
+
+print("El precio es ${}".format(precio))
+

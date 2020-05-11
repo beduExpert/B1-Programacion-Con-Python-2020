@@ -2,28 +2,45 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
-
+## Precio de helado
 ### OBJETIVO 
 
-- Ha z un programa que solicite un numero e imprima la tabla de multiplicar, usa format
+- El alumno hará uso de condicionales
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Escribe un programa que devuelva el precio de un helado solicitado por el cliente de acuerdo al topping:
+
+1.Helado con oreo: $19
+1.Helado con m&m: $25
+1.Helado con fresas: $22
+1.Helado con brownie: $28
+
+En caso de introducir otro topping, se le debe decir al cliente que el producto no esta disponible
 
 <details>
+	Solución
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	print("Qué topping quieres en tu helado?")
+	topping = input()
+
+	if topping == "oreo":
+		precio = 19
+	elif topping == "m&m":
+		precio = 25
+	elif topping == "fresas":
+		precio = 22
+	elif topping  == "brownie":
+		precio = 28
+	else:
+		print("producto no disponible")
+
+	print("El precio es ${}".format(precio))
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
 
-![imagen](https://picsum.photos/200/300)
 
