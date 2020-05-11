@@ -45,15 +45,29 @@ print(verdadero)
 print("Es de tipo:")
 print(type(verdadero))
 ```
+El programa tipos_de_dato.py muestra como realizar cast para manipular el tipo de dato de una variable.
+int() Cambia a tipo entero.
+float() Cambia a tipo float.
+str() Cambia a tipo string.
+'''
+#Se puede definir números como cadenas si se encierran en comillas
+numero1 = "100"
+numero2 = "3.14159"
+print(type(numero1))
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+#Para convertir a entero 
+entero = int(numero1)
+print(type(entero))
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+#Para convertir a flotante
+flotante = float(numero2)
+print(type(flotante))
 
-![imagen](https://picsum.photos/200/300)
+#También se puede convertir un número a cadena de texto
+num = 300
+cadena = str(num)
+print(type(cadena))
+
+'''
 
 
