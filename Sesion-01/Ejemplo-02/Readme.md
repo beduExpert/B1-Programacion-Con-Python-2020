@@ -1,5 +1,5 @@
 
-## Titulo del Ejemplo
+## Tipos de dato
 
 ### OBJETIVO
 
