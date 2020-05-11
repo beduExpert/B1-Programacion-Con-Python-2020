@@ -18,6 +18,7 @@
 
 <details>
 	#Adquiere los valores
+	
 	print("¿Qué tabla quieres calcular?")
 	numero = int(input())
 	numero2 = 1
