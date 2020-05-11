@@ -1,29 +1,69 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
+## Reto calculadora
 
 ### OBJETIVO 
 
-- Ha z un programa que solicite un numero e imprima la tabla de multiplicar, usa format
+- Pon a prueba los conocimientos adquiridos durante la sesión:
+	- Tipos de datos
+	- Operadores
+	- Condicionales	
+	- Cadenas de texto 
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Crea una calculadora:
+
+- Se deben solicitar al usuario dos números
+
+- Se puede seleccionar entre diferentes operaciones(suma, resta, multiplicación y división).
+
+- Imprimir resultados
+
+- Considerar división entre cero y caracteres no definidos como operaciones.
+
 
 <details>
+	Solución
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	#Se solocotan los datos
+	print("inserta el primer numero")
+	num1 = int(input())
+	print("inserta el segundo numero")
+	num2 = int(input())
+	print("Selecciona operación a realizar")
+	print("+ -> Suma")
+	print("- -> Resta")
+	print("* -> Multiplicaión")
+	print("/ -> División")
+	print("% -> Modulo")
+	operacion = input()
+
+	#Estructura de condicionales
+	if operacion == '+':
+		resultado = num1 + num2
+	elif operacion == '-':
+		resultado = num1 + num2
+	elif operacion == '*':
+		resultado = num1 + num2
+	elif operacion == '/':
+		if num2 == '0':
+			print("ERROR: División entre 0")
+			resultado = 'ERROR'
+		else:
+			resultado = num1 / num2
+	elif operacion == '%':
+		resultado = num1 % num2
+	else:
+		resultado = 'ERROR'
+		print("Operacion no definida")
+
+	#Imprime el resultado
+	print("{} {} {} = {}".format(num1,operacion, num2, resultado))
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
 
-![imagen](https://picsum.photos/200/300)
 
