@@ -15,7 +15,7 @@ else:
     
 # En caso de tener varias opciones se puede usar Elif
 
-numero = -4
+numero = 7
 
 if numero == 0:
     print("El número es 0")

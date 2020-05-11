@@ -1,23 +1,5 @@
-print("¿Qué tabla quieres calcular?")
-numero = int(input())
-numero2 = 1
-
-print("{} * {} = {}".format(numero, numero2, numero*numero2) )
-numero2 += 1
-print("{} * {} = {}".format(numero, numero2, numero*numero2) )
-numero2 += 1
-print("{} * {} = {}".format(numero, numero2, numero*numero2) )
-numero2 += 1
-print("{} * {} = {}".format(numero, numero2, numero*numero2) )
-numero2 += 1
-print("{} * {} = {}".format(numero, numero2, numero*numero2) )
-numero2 += 1
-print("{} * {} = {}".format(numero, numero2, numero*numero2) )
-numero2 += 1
-print("{} * {} = {}".format(numero, numero2, numero*numero2) )
-numero2 += 1
-print("{} * {} = {}".format(numero, numero2, numero*numero2) )
-numero2 += 1
-print("{} * {} = {}".format(numero, numero2, numero*numero2) )
-numero2 += 1
-print("{} * {} = {}".format(numero, numero2, numero*numero2) )
+#ADD reto condicionales
+print("inserta un numero")
+num = int(input())
+if num%2 == 0:
+    print("El numero es divisible entre 2")

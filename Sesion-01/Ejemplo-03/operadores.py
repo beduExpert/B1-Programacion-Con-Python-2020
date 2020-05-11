@@ -24,7 +24,11 @@ print(incremento)
 operando3 = True
 operando4 = False
 
-compuerta_and = operando3 & operando4
+compuerta_and = operando3 and operando4
 print("El resultado de la AND es")
 print(compuerta_and)
+
+negando = not operando3
+print("Esto es una negación")
+print(negando)
 
