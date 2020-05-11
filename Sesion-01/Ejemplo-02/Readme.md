@@ -49,7 +49,7 @@ El programa tipos_de_dato.py muestra como realizar cast para manipular el tipo d
 int() Cambia a tipo entero.
 float() Cambia a tipo float.
 str() Cambia a tipo string.
-'''
+```
 #Se puede definir números como cadenas si se encierran en comillas
 numero1 = "100"
 numero2 = "3.14159"
@@ -68,6 +68,6 @@ num = 300
 cadena = str(num)
 print(type(cadena))
 
-'''
+```
 
 
