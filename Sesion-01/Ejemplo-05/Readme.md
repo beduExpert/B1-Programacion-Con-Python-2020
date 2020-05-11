@@ -61,6 +61,6 @@ else:
 ```
 La siguiente imagen muestra un diagrama de flujo de una estructura if else.
 
-![imagen](https://picsum.photos/200/300)
+![imagen](https://lh6.googleusercontent.com/proxy/h4HOTupkQLgcHyCcW-3RQzRNSBPoA8ntFEG9IDARFVmBK5ENE_BI9TNb8IprYvwuLc-qWcMUveEZb-FRoFnWh9RjI_oDZ3Us3H5d8s2PlifV5njS1wQQwQ=w1200-h630-p-k-no-nu)
 
 

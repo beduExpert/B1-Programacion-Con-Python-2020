@@ -18,10 +18,10 @@ Las cadenas de texto son un tipo en Python que nos permite manipular texto, el c
 Las cadenas pueden usar los operadores + (concatenar cadenas) y * (Concatena la misma cadena múltiples veces)
 
 
-´´´
-# Esto es una cadena                                                                                                                                                                 
-d = "Hola mundo"                                                                                                                                                                     
-
+```
+#Esto es una cadena                                                                                            
+d = "Hola mundo"                                                
+```
 # Podemos comprobar el dato con type(), en inglés se les conoce como string                                                                                                                                              
 print(type(d))
 
