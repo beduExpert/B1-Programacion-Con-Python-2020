@@ -23,6 +23,6 @@ Agrega las instrucciones generales del ejemplo o reto
 
 Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
 
-![imagen](https://picsum.photos/200/300)
+![imagen](https://static.platzi.com/media/user_upload/1-a5257be9-296d-40be-b7bf-3885edead804.jpg)
 
 

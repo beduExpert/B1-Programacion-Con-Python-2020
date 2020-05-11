@@ -1,6 +1,4 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
 ## Titulo del Ejemplo
 
 ### OBJETIVO
@@ -29,7 +27,7 @@ Tipos de datos en Python.
 - Booleanos:
 
         - True
-        
+
         - False
 
 El programa conversion_de_datos.py Aborda los distintos tipos de datos en Python.
