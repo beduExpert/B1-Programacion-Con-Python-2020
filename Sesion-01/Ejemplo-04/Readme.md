@@ -21,7 +21,7 @@ Las cadenas pueden usar los operadores + (concatenar cadenas) y * (Concatena la 
 ```
 #Esto es una cadena                                                                                            
 d = "Hola mundo"                                                
-```
+
 # Podemos comprobar el dato con type(), en inglés se les conoce como string                                                                                                                                              
 print(type(d))
 
@@ -40,6 +40,7 @@ print(type(cadena_vacia))
 print("Hola" * 5) #'* Repite la misma cadena n-veces'
 print("Hola" + " Mundo") #'+ concatena cadenas'
 ```
+
 La función format nos permite introducir argumentos dentro de cadenas de texto y darle formato.
 
 El archivo formato.py muestra algunas maneras de usar format.py
