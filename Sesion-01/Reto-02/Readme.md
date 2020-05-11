@@ -2,31 +2,46 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
+## Operadores
 
 ### OBJETIVO 
+
+- Usar operadores aritmeticos y lógicos
+
+#### REQUISITOS 
+
+1. Python 3
+
+#### DESARROLLO
 
 - Crea un programa que solicite 2 numeros e imprima los siguientes resultados
 	- Resta usando el operador -
 	- Modulo usando el operador %
+- Ademas realizar el or entre un valor true y un false
 	
 
-#### REQUISITOS 
-
-1. Lo necesario para desarrollar el ejemplo o el Reto 
-
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
 <details>
+	#Adquiere los datos
+	print("Introduce dos numeros")
+	a = input()
+	b = input()
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	#Convierte los datos a entero
+	num1 = int(a)
+	num2 = int(b)
+
+	#Realiza las operaciones aritméticas
+	print("La resta de los numeros es")
+	print(num1-num2)
+
+	print("El modulo de estos numeros es")
+	print(num1%num2)
+
+	#Compuerta OR
+	dato1  = True
+	dato2 = False
+	print("Operacion or de un true y un false ")
+	print(dato1 or dato2)
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
 
