@@ -1,29 +1,47 @@
  
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
+## Tablas de multiplicar
 
 ### OBJETIVO 
-
-- Lo que esperamos que el alumno aprenda 
+- Adquirir datos desde consola
+- Crear cadenas de texto
+- Usar format
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
 
 #### DESARROLLO
+- Haz un programa que solicite un numero e imprima la tabla de multiplicar, usa format
 
-Agrega las instrucciones generales del ejemplo o reto
 
 <details>
+	#Adquiere los valores
+	
+	print("¿Qué tabla quieres calcular?")
+	numero = int(input())
+	numero2 = 1
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	#Crea e imprime cadenas de texto
+	print("{} * {} = {}".format(numero, numero2, numero*numero2) )
+	numero2 += 1
+	print("{} * {} = {}".format(numero, numero2, numero*numero2) )
+	numero2 += 1
+	print("{} * {} = {}".format(numero, numero2, numero*numero2) )
+	numero2 += 1
+	print("{} * {} = {}".format(numero, numero2, numero*numero2) )
+	numero2 += 1
+	print("{} * {} = {}".format(numero, numero2, numero*numero2) )
+	numero2 += 1
+	print("{} * {} = {}".format(numero, numero2, numero*numero2) )
+	numero2 += 1
+	print("{} * {} = {}".format(numero, numero2, numero*numero2) )
+	numero2 += 1
+	print("{} * {} = {}".format(numero, numero2, numero*numero2) )
+	numero2 += 1
+	print("{} * {} = {}".format(numero, numero2, numero*numero2) )
+	numero2 += 1
+	print("{} * {} = {}".format(numero, numero2, numero*numero2) )
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
 

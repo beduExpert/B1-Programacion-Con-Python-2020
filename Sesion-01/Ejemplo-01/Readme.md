@@ -37,27 +37,12 @@ Python 3.6.8
 ```
 Ahora estamos listos para correr nuestro primer programa en Python.
 
-## Titulo del Ejemplo
+## Hola mundo
 
-### OBJETIVO
+Usualmente, el primer programa que se realiza al aprender un lenguaje es imprimir la frase "Hola Mundo"
 
-- El alumno conocerá la sintaxis básica de Python, además podrá verificar la correcta instalación de si entorno de desarrollo.
-#### REQUISITOS
+En Python:
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
-
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
-
-![imagen](https://picsum.photos/200/300)
-
-
+```
+print("Hola Mundo")
+```

@@ -1,6 +1,3 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
 ## Crea tu primera aplicación con python 
 
 ### OBJETIVOS 
@@ -14,7 +11,6 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 #### ORGANIZACION DE LA CLASE 
 
 - Introducción e instalación
-
 	- [Ejemplo 01](Ejemplo-01)
 
 - Variables y tipos de datos
@@ -33,7 +29,8 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 	- [Ejemplo 05](Ejemplo-05)
 	- [Reto 04](Reto-04)
 
+- Reto final
+	- [Reto 05](Reto-05)
 
-
-- Postwork(Postwork)
+- [Postwork](Postwork)
 

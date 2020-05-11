@@ -1,29 +1,50 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+ 	
+## Reto sobre variables 
 
 ### OBJETIVO 
 
-- Crea un programa que imprima el tipo de dato de una variable ingresada
+- Adquiere datos por la consola
+- Realiza cambios de tipo de dato
+- Observa la diferencia entre datos sting y enteros
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
 
 #### DESARROLLO
+- Recibe dos numeros desde la consola
+- Convierte los números a variables enteras
+- Realiza la operación a = b+c con las variables enteras
+- Realiza la misma operación con las variables string
+- Imprime los resultados para ambas operaciones 
+- ¿Hay Alguna diferencia?
 
-Agrega las instrucciones generales del ejemplo o reto
 
 <details>
+	Adquiere los datos desde la consola
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	print("inserta número")
+	a = input()
+	print("inserta otro número") 
+	b = input()
+
+	Realiza el cast a entero
+	
+	num1 = int(a)
+	num2 = int(b)
+	
+	Realiza las operaciones
+	
+	concatena = a+b
+	suma = num1+num2
+	
+	Imprime los resultados
+	
+	print(concatena)
+	print(suma)
+	
+	
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
 
-![imagen](https://picsum.photos/200/300)
 
