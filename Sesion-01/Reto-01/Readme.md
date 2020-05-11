@@ -6,7 +6,7 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Crea un programa que imprima el tipo de dato de una variable ingresada
 
 #### REQUISITOS 
 

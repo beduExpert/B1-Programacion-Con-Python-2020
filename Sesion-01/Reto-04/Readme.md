@@ -6,10 +6,7 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 ### OBJETIVO 
 
-- Crea un programa que solicite 2 numeros e imprima los siguientes resultados
-	- Resta usando el operador -
-	- Modulo usando el operador %
-	
+- Ha z un programa que solicite un numero e imprima la tabla de multiplicar, usa format
 
 #### REQUISITOS 
 
