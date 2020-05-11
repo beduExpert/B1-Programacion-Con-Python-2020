@@ -5,15 +5,46 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Usar los distintos tipos de datos deisponibles en Python
+- Utiilizar funciones de cast para hacer conversiones de tipo
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3
 
 #### DESARROLLO
+El programa conversion_de_datos.py Aborda los distintos tipos de datos en Python.
 
-Agrega las instrucciones generales del ejemplo o reto
+La función type() retorna el tipo de dato de la variable que tenga como argumento.
+```
+#tipos de dato numéricos
+entero = 4
+print("El dato introducido contiene:")
+print(entero)
+print("Es de tipo:")
+print(type(entero))
+
+
+pi = 3.14159
+print("El dato introducido contiene:")
+print(pi)
+print("Es de tipo:")
+print(type(pi))
+
+#Cadenas de texto
+mensaje = "Hola Mundo"
+print("El dato introducido contiene:")
+print(mensaje)
+print("Es de tipo:")
+print(type(mensaje))
+
+#Datos booleanos
+verdadero = True
+print("El dato introducido contiene:")
+print(verdadero)
+print("Es de tipo:")
+print(type(verdadero))
+```
 
 <details>
 	<summary>Solucion</summary>
