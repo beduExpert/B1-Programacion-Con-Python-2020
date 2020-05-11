@@ -6,7 +6,7 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Ha z un programa que solicite un numero e imprima la tabla de multiplicar, usa format
 
 #### REQUISITOS 
 
