@@ -1,17 +1,18 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Diccionarios
 
 ### OBJETIVO
 
-- Utilizar ciclos while
-- Utilizar ciclos for para recorrer estructuras iterables
-- Utilizar ciclos for con rangos
+- Declarar diccionarios.
+- Acceder a los valores y llaves en diccionarios.
+- Obtener valores mediante su llave.
+- Realizar operaciones básicas con diccionarios.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3
 
 #### DESARROLLO
 

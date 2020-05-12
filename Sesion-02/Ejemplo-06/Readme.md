@@ -1,17 +1,18 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Tuplas
+## Funciones
 
 ### OBJETIVO
 
-- Declarar tuplas
-- Acceder a datos mediante indices
-- Identificar la inmutabilidad de las tuplas y sus implicaciones
+- Identificar funciones
+- Realizar llamados a funciones
+- Declarar funciones
+- Utilizar parámetros y valores de retorno en funciones
 
 #### REQUISITOS
 
-1. Python 3
+1. Lo necesario para desarrollar el ejemplo o el Reto
 
 #### DESARROLLO
 

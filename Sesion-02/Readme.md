@@ -15,22 +15,24 @@
 
 - Tuplas
 	- [Ejemplo 02](Ejemplo-02)
-	- [Reto 02](Reto-02)
+
+- Sets
+	- [Ejemplo 03](Ejemplo-03)
 
 - Diccionarios
-	- [Ejemplo 03](Ejemplo-03)
-	- [Reto 03](Reto-03)
-
-- Ciclos
 	- [Ejemplo 04](Ejemplo-04)
 	- [Reto 04](Reto-04)
 
-- Funciones
+- Ciclos
 	- [Ejemplo 05](Ejemplo-05)
 	- [Reto 05](Reto-05)
 
+- Funciones
+	- [Ejemplo 06](Ejemplo-06)
+	- [Reto 06](Reto-06)
+
 - Reto final
-	- [Reto 06](Reto-05)
+	- [Reto 07](Reto-07)
 
 - [Postwork](Postwork)
 

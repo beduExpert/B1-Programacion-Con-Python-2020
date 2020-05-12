@@ -1,14 +1,13 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Funciones
+## Titulo del Ejemplo
 
 ### OBJETIVO
 
-- Identificar funciones
-- Realizar llamados a funciones
-- Declarar funciones
-- Utilizar parámetros y valores de retorno en funciones
+- Utilizar ciclos while
+- Utilizar ciclos for para recorrer estructuras iterables
+- Utilizar ciclos for con rangos
 
 #### REQUISITOS
 
