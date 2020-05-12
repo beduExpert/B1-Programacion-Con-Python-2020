@@ -1,16 +1,15 @@
  
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
+## Reto Final
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Practicar los conceptos adquiridos durante la sesión 2
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
 
 #### DESARROLLO
 

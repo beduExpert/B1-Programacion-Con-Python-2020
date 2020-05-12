@@ -1,29 +1,42 @@
  
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
+## Minimo Común múltiplo
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Escribir funciones en Python
+- Adquirir parámetos en funciones
+
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Realiza un programa que calcule el minimo común múltiplo utilizando el algoritmo descrito en la siguiente [página](https://www.smartick.es/blog/matematicas/recursos-didacticos/minimo-comun-multiplo-mcm/)
 
 <details>
+	Código
+	def min_com_multiplo (num1, num2):
+		divisor = 2
+		mcm = 1
+		while num1 > 1 or num2 > 1:
+			if num1 % divisor == 0:
+				num1 = num1 / divisor
+				dividido = True
+			if num2 % divisor == 0:
+				num2 = num2 / divisor
+				dividido = True
+			if dividido:
+				mcm *= divisor
+				dividido = False
+			else:
+				divisor += 1
+		return mcm
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	print(min_com_multiplo(18,91))
+
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
 
