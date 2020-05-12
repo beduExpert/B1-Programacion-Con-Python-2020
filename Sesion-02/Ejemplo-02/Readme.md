@@ -1,15 +1,17 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Tuplas
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Declarar tuplas
+- Acceder a datos mediante indices
+- Identificar la inmutabilidad de las tuplas y sus implicaciones
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3
 
 #### DESARROLLO
 

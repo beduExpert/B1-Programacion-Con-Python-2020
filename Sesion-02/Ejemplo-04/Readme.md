@@ -5,7 +5,9 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Utilizar ciclos while
+- Utilizar ciclos for para recorrer estructuras iterables
+- Utilizar ciclos for con rangos
 
 #### REQUISITOS
 

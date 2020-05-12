@@ -1,15 +1,17 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Listas
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Declarar listas
+- Acceder a datos de listas mediante índice
+- Realizar operaciones básicas de listas: inserción, eliminar, pop...
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3
 
 #### DESARROLLO
 

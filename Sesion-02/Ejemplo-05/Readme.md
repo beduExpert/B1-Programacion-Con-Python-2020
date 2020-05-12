@@ -1,11 +1,14 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Funciones
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Identificar funciones
+- Realizar llamados a funciones
+- Declarar funciones
+- Utilizar parámetros y valores de retorno en funciones
 
 #### REQUISITOS
 
