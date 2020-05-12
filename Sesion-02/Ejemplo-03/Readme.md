@@ -36,7 +36,7 @@ s1.add(3) #No agrega un nuevo elemento
 Quitar elementos
 ```
 s1.remove(3)  
-
+```
 Se pueden realizar operaciones de conjuntos
 ```
 s2 = {4, 5, 6, 7, 8}
