@@ -2,28 +2,37 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
+## Directorio
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Declarar diccionarios
+- Acceder a los valores guardados en diccionario
+- Agregar valores a diccionarios
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Haz un programa que funcione como un directorio de números telefonicos
+
+1. Crea un diccionario que almacene números de telefono utilizando nombres como llaves, con al menos 5 números
+2. Adquiere al menos uno de los números
+3. Agrega nuevas entradas al diccionario
 
 <details>
+	Programa
+	directorio = {'Pedro':'33421', 
+		'Fer':'23470',
+		'Freezer':'12345',
+		'Sr. Burns':'09876',
+		'Mario':'65976'}
+		
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	print(directorio['Fer'])
+	directorio['Ana']='666666'
+	
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
 

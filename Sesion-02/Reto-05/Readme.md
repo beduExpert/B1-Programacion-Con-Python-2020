@@ -1,29 +1,32 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
+ 	
 ## Titulo del Ejemplo 
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Utilizar ciclos For
+- Utilizar ciclos while
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
 
 #### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
+1. Realiza un ciclo que imprima todos los números de la serie Fibonacci menores a 1000.
+2. Realiza un ciclo for que itere sobre los valores de una tupla.
 <details>
+	Código
+	num1 = 1
+	num2 = 1
+	while num2 < 1000:
+		print (num2) 
+		a = num1 + num2
+		num2 = num1
+		num1 = a
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+
+	t1 = (0,1,2,3,4, 5,6)
+	for dato in t1:
+		print(dato)
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
 
