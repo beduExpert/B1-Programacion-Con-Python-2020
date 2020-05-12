@@ -5,9 +5,9 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 ### OBJETIVO
 
-- Declarar tuplas
-- Acceder a datos mediante indices
-- Identificar la inmutabilidad de las tuplas y sus implicaciones
+- Declarar sets
+- Acceder a datos dentro de un set
+- Realizar operaciones de conjuntos usando sets
 
 #### REQUISITOS
 
@@ -15,16 +15,31 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Los conjuntos o sets, son colecciones no mutables y no ordenadas, utilizadas principalmente en operaciones de lógica y matemática.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+A diferencia de las listas y tuplas, al no estar ordenadas, no se puede acceder mediante un índice. Se puede utlizar un for para acceder a todos sus elementos uno por uno. Tampoco permite elementos repetidos.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+ Declarar un set 
+```
+s1 = set()
 
-![imagen](https://picsum.photos/200/300)
+s1 = {1, 2, 4, 5}
+```
+Agregar elementos a un set
+```
+s1.add(3)  
 
+#Los datos en un set no se pueden repetir
+s1.add(3) #No agrega un nuevo elemento
+```
 
+Quitar elementos
+```
+s1.remove(3)  
+
+Se pueden realizar operaciones de conjuntos
+```
+s2 = {4, 5, 6, 7, 8}
+print(s1 & s2) # Union 
+print(s1.intersection(s2))  # Interseccion
+```

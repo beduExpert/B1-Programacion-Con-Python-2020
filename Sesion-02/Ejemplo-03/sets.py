@@ -1,28 +1,25 @@
-# Creando una tupla vacia
-t1 = ()
-t2 = tuple()
-# Obteniendo el tipo de dato
 
-type(t1)
+# Declarar un set 
+s1 = set()
+print(type(set))
 
-# Tupla de un elemento
+s1 = {1, 2, 4, 5}
 
-t3 = (1, )  # Sin la coma no se detecta como tupla
-# Asignacion multiple con tupla
+# Agregar elementos a un set
+s1.add(3)  
+print(s1)
 
-a, b = (10, 20)
+#Los datos en un set no se pueden repetir
+s1.add(3)
+print(s1)
 
-print(a, b)
+# Quitar elementos
+s1.remove(3)  
+print(s1)
 
-#No se puede modificar una tupla, quitar comentarios para comprobar
+print(list(s1))
 
-#t1.insert(0, 1)
-#t1.append(10)
-
-#Pero si podemos acceder a los valores almacenados
-a = t3[0]
-print(a)
-
-#O convertir a listas, las cuales si se pueden modificar
-l1 = list(t3)
-print(l1)
+#Se pueden realizar operaciones de conjuntos
+s2 = {4, 5, 6, 7, 8}
+print(s1 & s2) # Union 
+print(s1.intersection(s2))  # Interseccion
