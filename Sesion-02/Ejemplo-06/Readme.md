@@ -16,16 +16,41 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Las funciones son porciones de código que se pueden llamar para hacer uso de su codigo
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Algunas que ya hemos utilizado, las funciones se llaman usando su nombre y a veces parámetros
+```
+print("Hola Mundo")
+input()
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+Para definirlas usamos def
+```
+def hola_mundo():
+    print("Hola Mundo")
+#Para llamarlas, lo hacemos por su nombre
+hola_mundo()
+```
 
-![imagen](https://picsum.photos/200/300)
+Las funciones pueden tener parámetros
+```
+def saludo(persona):
+    print("Hola {}".format(persona))
+
+saludo("Luis")
+saludo("Bedu")
+saludo("Mundo")
+```
+
+Las funciones pueden devolver algun dato
+```
+def area_rectangulo(base, altura):
+    area = base * altura
+    return area
+
+b = 5
+h = 3
+area = area_rectangulo(b, h)
+```
 
 
