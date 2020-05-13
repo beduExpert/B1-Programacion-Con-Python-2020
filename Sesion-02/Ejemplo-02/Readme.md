@@ -1,28 +1,58 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Tuplas
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Declarar tuplas
+- Acceder a datos mediante indices
+- Identificar la inmutabilidad de las tuplas y sus implicaciones
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Las tuplas son estructuras de datos  similares a las listas, pero que se caracterizan por ser inmutables.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Formas de declarar una tupla
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+```
+# Creando una tupla vacia
+t1 = ()
+t2 = tuple()
 
-![imagen](https://picsum.photos/200/300)
+
+# Tupla de un elemento
+
+t3 = (1, )  # Sin la coma no se detecta como tupla
+
+```
+
+Se pueden asignar de forma simultanea los valores de una tupla a variables.
+```
+# Asignacion multiple con tupla
+
+a, b = (10, 20)
+
+```
+
+Las tuplas son inmutables, por lo que el intentar modificarlas es causa de error.
+```
+#No se puede modificar una tupla, quitar comentarios para comprobar
+
+t1.insert(0, 1)
+t1.append(10)
+```
+Pero si podemos acceder a los valores almacenados
+```
+a = t3[0]
+```
+O convertir a listas, las cuales si se pueden modificar
+```
+l1 = list(t3)
+```
 
 
