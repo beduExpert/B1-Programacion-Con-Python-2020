@@ -1,15 +1,19 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Importar modulos de la libreris estandar y de librerias externas
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Importar modulos de libreria estandar
+- Instalar Pip
+- Instalar modulos desde Pip
+- Importar modulos externos
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python
+2. Pip 
+3. Conexión a internet para instalar modulos
 
 #### DESARROLLO
 
