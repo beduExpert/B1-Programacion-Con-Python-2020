@@ -1,28 +1,40 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Docstrings
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Utilizar docstrings
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Cuando escribimos software es de utilidad dar una ayuda a quien podria consumirlos, para esto nos sirven los docstrings.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Los docstrings se generan entre comillas triples
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+Para agregar ayuda general en un paquete, se hace en el archivo __init__.py
+```
+"""Paquete de funciones sencillas"""
+```
+Para agregarla en un modulo, se hace en la parte superior
+Para funciones, debajo de su nombre
+```
+#Aplicaciones extras
+def tabla(n):
+    #Imprime la tabla de multiplicar del numero introducido
+    for i in range(1,11):
+        print("{} x {} = {}".format(n, i, n * i))
+```
+Para solicitar la ayuda incluida dentro del docstring usa help()
+```
 
-![imagen](https://picsum.photos/200/300)
-
+from matematicas import aritmetica
+help(aritmetica)
+help(aritmetica.suma)
+```
 
