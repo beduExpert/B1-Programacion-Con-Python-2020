@@ -1,11 +1,9 @@
-## Crea tu primera aplicación con python 
-
+## Estructuras de control y funciones
 ### OBJETIVOS 
-- Conocer la sintaxis básica de Python.
-- Utilizar variables y tipos  de datos; operadores lógicos y condicionales.
-- Crear sus primeros programas en Python.
-- Hacer uso de condicionales.
-
+- Incluir ciclos en nuestros programas
+- Utilizar listas, sets, tuplas
+- Utilizar diccionarios
+- Utilizar funciones
  
 
 #### ORGANIZACION DE LA CLASE 

@@ -1,29 +1,35 @@
  
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
 ## Titulo del Ejemplo 
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Importar modulos
+- Usar funciones del modulo math
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
-
+1. Importa math
+2. Usa las funciones factorial() y sqrt() (raiz cuadrada)
+3. Importa gcd (macimo comun divisor) desde math usando un alias
+4. Usa gcd
 <details>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+
+	import math 
+
+	print(math.sqrt(25))
+	print(math.factorial(4))
+
+	from math import gcd as mcd
+
+	print(mcd(23,12))
+
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
 
-![imagen](https://picsum.photos/200/300)
 

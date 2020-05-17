@@ -20,7 +20,7 @@ Las listas son estructuras de datos que permiten almacenar una serie de distinto
 Para declarar listas
 
 ```
-#Formas de declarar una lista vacia
+# Formas de declarar una lista vacia
 lista_vacia = [] #Dentro de los corchetes se especifican los datos
 lista_vacia2 = list() #Usando La función list
 
@@ -38,7 +38,7 @@ Las listas pueden contener datos de distinto tipo, o otras listas
 # Las listas pueden contener datos de distinto tipo
 lista_mix = [1, 1.4, "hola"]
 
-#O incluso otras listas
+# O incluso otras listas
 listas = [lista_int,lista_str,lista_fl]
 ```
 Se pueden realizar distintos tipos de operaciones con las listas

@@ -1,28 +1,52 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+ 
+	
+## Args y kwargs
+### OBJETIVO 
 
-## Titulo del Ejemplo
+- Obtener un numero de argumentos no determinado usando args
+- Obtener argumentos con nombre usando kwargs
 
-### OBJETIVO
+#### REQUISITOS 
 
-- Lo que esperamos que el alumno aprenda
-
-#### REQUISITOS
-
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3 
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Existen dos tipos de argumentos en Python: los convencionales y aquellos que están sujetos a un nombre específico, generalmente identificados como args (arguments) y kwargs (keyword arguments), respectivamente. 
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Para obtener un número indeterminado de argumentos usamos *args, los argumentos en *args se consideran una tupla y se puede iterar sobre ellos.
+```
+def imprime(*a2gs):  
+    for arg in a2gs:  
+        print (arg) 
+    
+imprime('Hola', 'A', 'Todos', '!')
+```
+Se pueden mezclar argumentos comunes con args
+```
+def imprime_varias_veces(veces, *argv): 
+    for i in range(veces):
+        for arg in argv:
+            print(arg)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+  
+imprime_varias_veces(3, 'Bienvenidos ', 'a', 'Bedu') 
+```
+**kwargs nos permite pasar argumentos nombrados (también un número indeterminado)
+```
+def saludo(**kwargs):
+    print('Hola {} de {}'.format(kwargs['nombre'], kwargs['empresa']))
 
-![imagen](https://picsum.photos/200/300)
-
+saludo(empresa='Bedu',nombre='Luis')
+saludo(nombre='Luis',empresa='Bedu')
+```
+Los valores se tratan como un diccionario y se pueden utilizar sus llaves y valores
+```
+def myFun(**kwargs):  
+    for key, value in kwargs.items(): 
+        print ("%s == %s" %(key, value)) 
+  
+myFun(nombre ='Fernando', empresa ='Bedu', ciudad='CDMX') 
+```
 
