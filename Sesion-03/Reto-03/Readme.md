@@ -1,26 +1,43 @@
  
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
+## Crear modulo
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
-
+- Crear modulos
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
+2. Reto 01 de esta sesión 
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Convierte el archivo del reto 01 args en un modulo
+2. Llama la funcion de suma y producto desde otro archivo
 
 <details>
+	Archivo del modulo
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	def operacion(operacion, *args):
+		resultado = 0
+		if operacion == '*':
+			resultado = 1
+		for arg in args:
+			if operacion == '+':
+				resultado += arg
+			elif operacion == '*':
+				resultado *= arg
+		return resultado
+
+	Archivo de ejecución
+
+	from argumentos import operacion
+
+	suma = operacion('+',2,3,4)
+	multiplicacion = operacion('*',1,3,4)
+	print(suma)
+	print(multiplicacion)
 </details> 
 
 Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
