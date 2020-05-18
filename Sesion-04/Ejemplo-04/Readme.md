@@ -1,11 +1,10 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Encapsulación
+## Herencia
 
 ### OBJETIVO
 
-- Definir elementos de clase privados
+- Escribir clases heredadas
 
 #### REQUISITOS
 
@@ -13,29 +12,32 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-La encapsulación consiste en denegar el acceso a los atributos y métodos internos de la clase desde el exterior. En Python no existe, pero se puede simular precediendo atributos y métodos con dos barras bajas __ como indicando que son "especiales".
+Proceso en el cual una clase, obtiene los atributos y métodos de otra(s), y para opcionalmente extenderlos y cambiarlos. La nueva clase se conoce como hija y la que se toma como base como padre.
 
 ```
-#Definicion de clase con atributos y métodos privados
-class Ejemplo:
-    __atributo_privado = "Soy un atributo inalcanzable desde fuera."
-    def get_atributo(self):
-        return self.__atributo_privado
-    def __metodo_privado(self):
-        return "Metodo privado ejecutivo"
-    def metodo_publico(self):
-        print(self.__metodo_privado())
+class Animal():
+    def __init__(self, nombre='animal', especie='animal', sonido=''):
+        self.nombre = nombre
+        self.especie = especie
+        self.sonido = sonido
+    
+    def grito(self):
+        print("El {} hace {}".format(self.nombre, self.sonido))
+    
+    def info(self):
+        print("Nombre: {} - Especie {}".format(self.nombre, self.especie))
 
-e = Ejemplo()
-#El ejecutar la siguiente linea, causa error debido a que se intenta el acceso a un atributo privado
-#print(e.__atributo_privado)
+class Pez(Animal):
+    def __init__(self, nombre='pez', especie='pez'):
+        super().__init__(nombre, especie, 'blooob')  # Extiende la clase
 
-#Pero si se puede hacer a travez de un método publico
-print(e.get_atributo())
+    def nadar(self):
+        print("el {} está nadando".format(self.especie))
 
-#El ejecutar la siguiente linea, causa error debido a que se intenta el acceso a un método privado
-#e.__metodo_privado()
+Nemo = Pez(nombre = 'Nemo', especie='pez payaso')
+#Metodos de clase padre
+Nemo.info()
+Nemo.nadar()
+Nemo.grito()
 
-#Pero si se puede hacer a travez de un método publico
-e.metodo_publico()
 ```

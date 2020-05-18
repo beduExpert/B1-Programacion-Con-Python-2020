@@ -18,6 +18,7 @@ class Pez(Animal):
         print("el {} está nadando".format(self.especie))
 
 Nemo = Pez(nombre = 'Nemo', especie='pez payaso')
+#Metodos de clase padre
 Nemo.info()
 Nemo.nadar()
 Nemo.grito()
