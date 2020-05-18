@@ -22,15 +22,14 @@
 
 - Paquetes
 	- [Ejemplo 04](Ejemplo-04)
-	- [Reto 04](Reto-04)
+
 
 - Docstrings
 	- [Ejemplo 05](Ejemplo-05)
-	- [Reto 05](Reto-05)
 
 
 - Reto final
-	- [Reto 06](Reto-06)
+	- [Reto 04](Reto-04)
 
 - [Postwork](Postwork)
 
