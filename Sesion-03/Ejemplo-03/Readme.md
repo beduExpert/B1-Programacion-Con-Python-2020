@@ -1,28 +1,32 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Modulos
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Crear modulos
+- Importar funciones desde modulos 
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Los modulos nos permiten estructurar nuestro código en más de un archivo, cualquier archivo .py puede considerarse un modulo
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Para acceder a código que se encuentra en un modulo (en la misma carpeta) usamos import con el nombre del archivo(sin el .py)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+```
+#Se importa el paquete completo
+import aritmetica
+print(aritmetica.promedio(1,3,5))
 
-![imagen](https://picsum.photos/200/300)
+#importar una función desde el paquete
+from aritmetica import suma
+print(suma(1,3,5))
 
-
+#Usar alias para elementos importados
+from aritmetica import producto as prod
+print(prod(1,2))
+```
