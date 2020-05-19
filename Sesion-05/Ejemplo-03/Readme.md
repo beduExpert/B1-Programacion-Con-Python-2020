@@ -46,3 +46,5 @@ except: #Si se cae en un error no definido anteriormente
     print("Ocurrió otro error")
 ```
 
+Existe una última clausula opcional finally, la cuál se ejecuta indistintamente de si se produjo una excepción.
+
