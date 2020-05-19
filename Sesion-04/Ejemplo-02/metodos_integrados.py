@@ -14,4 +14,4 @@ objeto = MiClase()
 #Llama a _str__
 print(objeto)
 
-#__del__ se llama cuando el objeto ya no se utilizará, en este caso al final del programa
+#__del__ se llama automaticamente cuando el objeto ya no se utilizará, en este caso al final del programa
