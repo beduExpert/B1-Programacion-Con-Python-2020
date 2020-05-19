@@ -1,28 +1,48 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Manejo de errores y exceciones
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Utilizar try y except para manejar errores durante la ejecución
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3 
 
 #### DESARROLLO
+Usualmente, cuando se produce un error durante el tiempo de ejecución el programa se detiene imprimiendo en la terminal el tipo de error.
 
-Agrega las instrucciones generales del ejemplo o reto
+Por ejemplo si tratamos de dividir entre 0, nos arroja el siguiente error
+```
+ZeroDivisionError: division by zero
+```
+- try: El código en este bloque se ejecuta
+- except: Si el código en try causa error, la ejecución no se detiene y en su lugar, se ejecuta este bloque
+```
+a = 4
+b = 0
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+try:
+    c = a/b
+    print ("El resultado de la división es {}".format(c))
+except:
+    print("No puedes dividir entre 0")
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+```
+Si se requiere tomar distintas medidas en caso de que haya distintos tipos de errores posibles, se pueden especificar en distintos except. 
 
-![imagen](https://picsum.photos/200/300)
+En el siguiente ejemplo el último except maneja errore que no se han definido anteriormente.
 
+```
+#Se pueden definir distintas medidas a tomar para distinto tipo de error
+try:
+    c = a/x
+except NameError:
+    print("Alguna variable no fue definida")
+except ZeroDivisionError:
+    print("No puedes dividir entre 0")
+except: #Si se cae en un error no definido anteriormente
+    print("Ocurrió otro error")
+```
 
