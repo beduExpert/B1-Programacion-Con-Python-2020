@@ -1,15 +1,15 @@
 #Para crear una clase usamos la palabra reservada class
 #Para crear metodos usamos def
 #self se refiere a los elementos(atributos y metodos) de la misma clase
-class persona():
+class Persona:
     def asignar_nombre(self,nombre):
         self.nombre = nombre
     def saluda(self):
         print("hola, soy {}".format(self.nombre))
 
 #Crea objetos de clase persona
-doctor = persona()
-ingeniero = persona()
+doctor = Persona()
+ingeniero = Persona()
 
 #Asignar a atributos
 ingeniero.nombre = 'Gabriel'

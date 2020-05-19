@@ -2,28 +2,54 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
+## Atributos privados
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Crear metodos y atributos privados
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
+2. Código de reto 2
 
 #### DESARROLLO
+Modifica el código del reto 2 para convertir los parametros ruedas, medio y velocidad para que no se puedan modificar desde afuera
 
-Agrega las instrucciones generales del ejemplo o reto
+Verifica que no se permita el acceso a los parametros desde afuera de la clase.
 
 <details>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	class Vehiculo:
+		def __init__(self,ruedas = 0, medio = 'medio', velocidad = 'no se mueve'):
+			self.__ruedas = ruedas
+			self.__velocidad = velocidad
+			self.__medio = medio
+		def avanzar(self):
+			print("El vehiculo se mueve a velocidad {}".format(self.__velocidad))
+		def __str__(self):
+			return "ruedas {}, medio: {}, velocidad:{}".format(self.__ruedas, self.__medio, self.__velocidad)
+		def describir(self):
+			print("Es un vehiculo de {} ruedas".format(self.__ruedas))
+			print("se mueve a velocidad {}".format(self.__velocidad))
+			print("Su medio es {}".format(self.__medio))
+
+
+	barco = Vehiculo(ruedas=0, medio='agua',velocidad='lenta')
+
+	avion = Vehiculo(ruedas=4, medio='aire',velocidad='rapida')
+
+	auto = Vehiculo(ruedas=4, medio='asfalto',velocidad='media')
+	barco.describir()
+
+	avion.describir()
+
+	auto.describir()
+
+	auto.avanzar()
+
+	print(avion)
+	#auto.__ruedas
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
 
