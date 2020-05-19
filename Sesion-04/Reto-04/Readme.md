@@ -1,21 +1,19 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+ 	
+## Herencia
 
 ### OBJETIVO 
 
-- Utilizar polimorfismo y sobrecarga de métodos
+- Crear clases heredadas
 
 #### REQUISITOS 
 
 1. Python 3
-2. Código del reto 4 de la sesión pasada
+2. Código de reto 3
 
 #### DESARROLLO
-
-- Modifica el código del reto 4 de la sesión pasada para sobrecargar el método avanzar de la clase Vehiculo en sus clases hijas, para ser mas descriptiva de acuerdo al tipo de vehiculo
+- A partir de la clase vehiculo crea clases heredadas para vehiculos acuaticos, terrestres y aereos
+- Crea un metodo especifico para cada clase
+- Crea un objeto (o redefine) de cada clase
 
 <details>
 	class Vehiculo:
@@ -37,24 +35,18 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 			super().__init__(ruedas, 'tierra', velocidad)
 		def estacionarse(self):
 			print("El vehiculo está estacionado")
-		def avanzar(self):
-			print("El vehiculo avanza por el camino")
 
 	class Vehiculo_acuatico(Vehiculo):
 		def __init__(self, velocidad='no se mueve'):
 			super().__init__(0, 'agua', velocidad)
 		def undirse(self):
 			print("El vehiculo se undió")
-		def avanzar(self):
-			print("El vehiculo avanza por el mar")
 
 	class Vehiculo_aereo(Vehiculo):
 		def __init__(self, ruedas=0, velocidad='no se mueve'):
 			super().__init__(ruedas, 'aire', velocidad)
 		def despegar(self):
 			print("El vehiculo está despegando")
-		def avanzar(self):
-			print("El vehículo está volando")
 
 	barco = Vehiculo_acuatico(velocidad='lenta')
 
@@ -68,7 +60,6 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 	auto.describir()
 
 	auto.avanzar()
-	avion.avanzar()
 
 	print(avion)
 	auto.estacionarse()
@@ -76,7 +67,4 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 	barco.undirse()
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
 

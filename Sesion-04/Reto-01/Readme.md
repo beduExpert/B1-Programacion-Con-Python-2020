@@ -1,29 +1,42 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+ 	
+## Reto clases y objetos
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Crear clases
+- Crear objetos a partir de una clase
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
 
 #### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
+- Crea una clase llamada vehiculo con argumentos como velocidad, numero de ruedas, medio
+- Agrega un metodo que describa el vehiculo
+- Crea tres objetos de esta clase con distintos argumentos
 <details>
+	class Vehiculo:
+		def describir(self):
+			print("Es un vehiculo de {} ruedas".format(self.ruedas))
+			print("se mueve a velocidad {}".format(self.velocidad))
+			print("Su medio es {}".format(self.medio))
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	barco = Vehiculo()
+	barco.ruedas=0
+	barco.velocidad='lenta'
+	barco.medio = 'agua' 
+	barco.describir()
+
+	Avion = Vehiculo()
+	Avion.ruedas=4
+	Avion.velocidad='rapido'
+	Avion.medio = 'aire' 
+	Avion.describir()
+
+	auto = Vehiculo()
+	auto.ruedas=4
+	auto.velocidad='media'
+	auto.medio = 'asfalto' 
+	auto.describir()
+
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
