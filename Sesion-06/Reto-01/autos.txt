@@ -1,0 +1,4 @@
+Kia rio	rojo	bajo	200 000
+swift	verde	medio	280000
+Rio	rojo	medio	210 000
+swift	amarillo	111111	11111
