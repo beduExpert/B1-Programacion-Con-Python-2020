@@ -5,7 +5,8 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Jinja
+- css
 
 #### REQUISITOS
 
