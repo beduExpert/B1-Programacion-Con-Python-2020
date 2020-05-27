@@ -14,6 +14,7 @@ Crear una página
 
 - Crea una página capas de calcular la suma, resta o multiplicación de dos números
 - Tanto la operación como los números se deben ingresar como parámetros dentro de la ruta
+-En la ruta / coloca una descripción breve del programa
 
 Ejemplo:
 http://127.0.0.1:5000/calculadora?operacion=suma&n1=10&n2=4
@@ -54,7 +55,4 @@ Pista:Puedes utilizar varias veces request para tener distintos parametros
 		app.run(debug=True)
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
 
