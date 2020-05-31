@@ -4,7 +4,7 @@
 
 ### OBJETIVO
 
-- LRealizar tests unitarios usando Pytest
+- Realizar tests unitarios usando Pytest
 - Ejecutar Pytest desde la terminal
 
 #### REQUISITOS
@@ -17,6 +17,7 @@
 Pytest es un paquete que nos permite automatizar pruebas unitarias de software escrito en Python.
 
 Si no tienes instalado Pytest, puedes instalarlo usando PIP
+
 ´´´
 $pip install pytest
 ´´´
