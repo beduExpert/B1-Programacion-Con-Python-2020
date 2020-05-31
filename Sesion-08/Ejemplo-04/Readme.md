@@ -3,7 +3,7 @@
 
 ### OBJETIVO
 
-- Se crearn test con argumentos parametrizados
+- Crear test con argumentos parametrizados
 
 #### REQUISITOS
 
