@@ -1,11 +1,9 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Pytest
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Crear test unitarios utilizando pytest
 
 #### ORGANIZACION DE LA CLASE 
 
