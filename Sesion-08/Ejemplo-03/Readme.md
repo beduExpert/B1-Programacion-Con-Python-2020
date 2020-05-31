@@ -1,7 +1,5 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Parametrización de tests
 
 ### OBJETIVO
 
