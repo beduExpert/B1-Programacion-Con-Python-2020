@@ -1,20 +1,26 @@
- 
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
+## Reto tests 2 
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Crear tests múltiples y con distintos tipos de sets
+- Seleccionar tests a ejecutar
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
+2. Pytest
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Para la función de promedio crea múltiples tests (puedes dividirlos en argumentos int y float)
+2. Agrega en los tests verificación por valor y por tipo
+3. Desde terminal realiza la ejecución de:
+	- Ambos tests
+	- Primer test
+	- Segundo test
+
 
 <details>
 

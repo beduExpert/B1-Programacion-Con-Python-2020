@@ -2,19 +2,27 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
-## Titulo del Ejemplo 
+## Reto tests 3
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+
+1. Se incluiran marks en los text
+2. Inclir skips en los test
+3. Filtrar los tests a realzar de distinta manera
 
 #### REQUISITOS 
-
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+- Python 3
+- Pytest
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. En los test realizados para el promedio agrega marks para realizar filtrados
+2. Ejecuta tests con las siguientes condiciones
+3. Filtrando por nombre
+4. Filtrando por mark
+5. Coloca un skip en alguno de los tests y ejecutalo.
+
 
 <details>
 
