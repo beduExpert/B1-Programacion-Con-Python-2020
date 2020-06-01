@@ -1,0 +1,14 @@
+{
+    "estudiantes": [
+        {
+            "id": 1,
+            "nombre": "Mario",
+            "resultado": "aprobado"
+        },
+        {
+            "id": 2,
+            "nombre": "Luigi",
+            "resultado": "reprobado"
+        }
+    ]
+}

@@ -1,16 +1,29 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Pytest
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Crear test unitarios utilizando pytest
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Test unitarios
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
+
+- Test unitarios avanzados
+
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
+
+- Opciones al ejecutar tests
+
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
+
+- Test ejecutado en métodos de clase
+
+	- [Ejemplo 04](Ejemplo-04)
+	- [Reto 04](Reto-04)
