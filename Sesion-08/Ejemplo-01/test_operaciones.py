@@ -1,7 +1,7 @@
 import operaciones
 
 def test_suma():
-    assert operaciones.suma(2,3) ==4
+    assert operaciones.suma(2,3) ==5
     assert operaciones.suma(2)==2
 
 def test_producto():
