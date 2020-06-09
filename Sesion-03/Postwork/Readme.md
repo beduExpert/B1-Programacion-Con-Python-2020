@@ -1,15 +1,12 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork 3
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- -Reforzar los aprendizajes de la sesión 3 y  aplicarlos al proyecto final. Utilizar los conceptos de args, modulos, paquetes y docstrings.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3
 
 #### DESARROLLO
 
