@@ -1,19 +1,24 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork 4
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+
+- Reforzar los aprendizajes de la sesión 4 y  aplicarlos al proyecto final. Utilizar los conceptos de clase, método y encapsulamiento.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Python 3 
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Crea la clase tarjeta de crédito, convierte las funciones anteriormente realizadas a métodos
+2. Crea la clase usuario, el cual debe tener nombre y una lista de tarjetas
+3. Crea métodos para agregar y borrar tarjetas de la lista
+4. Crea constructores, destructores, método __str__ para la clase, que consideres necesarios
+5. Haz que los atributos y métodos necesarios sean privados.
+6. Crea un archivo externo para probar elk acceso a elementos de la clase
+
 
 <details>
 

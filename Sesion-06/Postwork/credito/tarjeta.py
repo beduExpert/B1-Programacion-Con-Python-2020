@@ -1,3 +1,5 @@
+import json
+
 class Tarjeta_de_credito:
 
     def __init__(self, nombre='tarjeta', tasa= 0, deuda = 0, pagos = 0, cargos=0):
@@ -116,3 +118,44 @@ class Tarjeta_de_credito:
                 self.__pagos = self.__deuda
             self.imprime_reporte()
             self.__deuda = self.__nueva_deuda
+
+    def get_reporte(self):
+        """
+        Función que devuelve el reporte de una tarjeta en formato str
+        """
+        self.__calcula_nueva_deuda()
+        reporte = "-------------------------------------------------------------------\n"
+        reporte = reporte + "Resumen de información sobre la tarjeta {}\n".format(self.__nombre)
+        reporte = reporte + "Tasa de interes del producto:                    {}\n".format(self.__tasa)
+        reporte = reporte + "Saldo de la tarjeta antes del corte              {}\n".format(self.__deuda)
+        reporte = reporte + "Total de pagos realizados:                       {}\n".format(self.__pagos)
+        reporte = reporte + "Deuda después del corte con intereses aplicados: {}\n".format(self.__deuda_recalculada)
+        reporte = reporte + "Cargos realizados después del corte:             {}\n".format(self.__cargos)
+        reporte = reporte + "Deuda actual:                                    {}\n".format(self.__nueva_deuda)
+        reporte = reporte + "-------------------------------------------------------------------\n"
+        return reporte
+
+    def reporte_texto(self):
+        """
+        Función que crea un reporte en un archivo de texto
+        """
+        archivo = open("reporte_tarjeta_{}.txt".format(self.__nombre), 'w')
+        texto = self.get_reporte()
+        archivo.write(texto)
+        archivo.close()
+
+    def crea_json(self):
+        datos = {'nombre': self.__nombre, 'tasa':self.__tasa, 'deuda': self.__deuda, 'pagos': self.__pagos, 'cargos':self.__cargos}
+        with open("tarjeta_{}.json".format(self.__nombre), "w") as fjson: 
+            json.dump(datos, fjson, indent=4)  
+
+    def lee_json(self, archivo):
+        with open(archivo, 'r') as fjson: 
+            mi_json = json.load(fjson) 
+            self.__nombre = mi_json['nombre']
+            self.__tasa = mi_json['tasa']
+            self.__deuda = mi_json['deuda']
+            self.__pagos = mi_json['pagos']
+            self.__cargos = mi_json['cargos']
+            
+    

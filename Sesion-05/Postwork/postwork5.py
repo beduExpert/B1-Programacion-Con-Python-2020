@@ -15,3 +15,7 @@ usuario1.cancela_tarjeta('oro')
 
 usuario1.multiples_reportes()
 t1.pago_recurrente(300)
+
+t3 = Tarjeta_de_servicios()
+t3.crea_tarjeta()
+t3.imprime_reporte()

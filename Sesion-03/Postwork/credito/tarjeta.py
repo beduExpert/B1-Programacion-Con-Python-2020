@@ -79,3 +79,4 @@ def pagos_distintos(tarjeta, *args):
             tarjeta['pagos'] = tarjeta['deuda']
         imprime_reporte(tarjeta)
         tarjeta['deuda'] = tarjeta['nueva_deuda']
+
