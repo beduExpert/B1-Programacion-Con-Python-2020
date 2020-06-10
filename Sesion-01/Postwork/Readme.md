@@ -1,5 +1,5 @@
 
-## Calculadora de intereses de tarjeta de crédito
+## Postwork 1
 
 ### OBJETIVO
 
@@ -12,10 +12,15 @@
 
 - Haz un programa que solicite al usuario los siguientes datos
         - Nombre de la tarjeta
+
         - Tasa de interés
+
         - Deuda
+
         - Pago a realizar
+
         - Nuevos cargos
+        
 - El programa deberá devolver un resumen de la información y calcular el monto del próximo pago mensual.
 - El programa deberá considerar que no es posible realizar un pago superior al total de la deuda del mes pasado.
 - Para los fines de este trabajo, considera las siguientes fórmulas.
@@ -28,15 +33,6 @@ Utiliza variables, y define sus nombres. Usa condicionales e input de ser necesa
 Agrega formato a la información a mostrar, utilizando todas las bondades de format(). 
 Revisa https://pyformat.info para conocer todos sus usos.
 Empuja a Github los cambios para revisarlos la próxima clase.
-
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-
 
 
 
