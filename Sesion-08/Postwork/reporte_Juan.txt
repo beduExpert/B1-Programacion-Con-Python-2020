@@ -1,0 +1,19 @@
+Reporte del usuario:      Juan
+-------------------------------------------------------------------
+Resumen de información sobre la tarjeta oro
+Tasa de interes del producto:                    0
+Saldo de la tarjeta antes del corte              20000
+Total de pagos realizados:                       20000
+Deuda después del corte con intereses aplicados: 0.0
+Cargos realizados después del corte:             0
+Deuda actual:                                    0.0
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Resumen de información sobre la tarjeta platino
+Tasa de interes del producto:                    24
+Saldo de la tarjeta antes del corte              2000
+Total de pagos realizados:                       1300
+Deuda después del corte con intereses aplicados: 714.0
+Cargos realizados después del corte:             0
+Deuda actual:                                    714.0
+-------------------------------------------------------------------
