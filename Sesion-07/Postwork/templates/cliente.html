@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+{{title}}
+{% for item in tarjetas %}
+<dd>Tarjeta {{item.get_nombre()}}:
+
+<a href="http://localhost:5000/usuario={{usuario}}/tarjeta={{item.get_nombre()}}">Mas información</a>
+
+{% endfor %}
+
+<dd><a href="http://localhost:5000/gen_usuario={{usuario}}">Reporte General del usuario</a>
+{% endblock %}
