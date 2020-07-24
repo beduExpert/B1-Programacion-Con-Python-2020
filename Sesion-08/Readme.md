@@ -23,7 +23,13 @@
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
 
+- Parametrizacion de tests
+	- [Ejemplo 04](Ejemplo-03)
+	- [Reto 04](Reto-03)
+
 - Test ejecutado en métodos de clase
 
 	- [Ejemplo 04](Ejemplo-04)
 	- [Reto 04](Reto-04)
+- Reto final
+	- [Reto 06](Reto-06)

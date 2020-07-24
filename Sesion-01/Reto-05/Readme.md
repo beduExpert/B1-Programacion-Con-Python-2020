@@ -3,11 +3,11 @@
 
 ### OBJETIVO 
 
-- Pon a prueba los conocimientos adquiridos durante la sesión:
-	- Tipos de datos
-	- Operadores
-	- Condicionales	
-	- Cadenas de texto 
+- Utilizar distintos tipos de datos
+- Utilizar operadores lógicos y algebraicos
+- Escribir estructuras condicionales
+- Leer y escribir cadenas de texto
+
 
 #### REQUISITOS 
 
