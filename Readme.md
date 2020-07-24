@@ -1,12 +1,12 @@
  
-## Módulo: Nombre del modulo
+## Módulo: Programación con Python
 
 ### OBJETIVO 
  - Conocer la sintaxis básica de Python (estructuras de datos, funciones, módulos, clases, entre otros).
- - Utiliza variables y tipos de datos; operadores lógicos y condiciones, así como ciclos de control.
- - Usará efectivamente las herramientas de la programación orientada a objetos.
- - Asimismo, utiliza la programación orientada a objetos, escritura y lectura de archivos.
- - Programará aplicaciones usando Flask.
+ - Utilizar variables y tipos de datos; operadores lógicos y condiciones, así como ciclos de control.
+ - Usar efectivamente las herramientas de la programación orientada a objetos.
+ - Utilizar la programación orientada a objetos, escritura y lectura de archivos.
+ - Programar aplicaciones usando Flask.
  - Utilizar herramientas de testing.
 
 

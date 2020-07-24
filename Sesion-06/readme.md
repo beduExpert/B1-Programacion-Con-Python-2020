@@ -1,4 +1,4 @@
-# Sesión 04
+# Sesión 06
 ## Manipulación de archivos, JSON, CSV y excepciones
 
 ### Objetivos
@@ -13,7 +13,7 @@
 * Archivos de texto plano
    * [Ejemplo 01](Ejemplo-01)
    * [Reto 01](Reto-01)
-* Archivos CSV y Datetime
+* Archivos CSV 
    * [Ejemplo 02](Ejemplo-02)
    * [Reto 02](Reto-02)
 * JSON
@@ -22,6 +22,8 @@
 * Scripts y argumentos
    * [Ejemplo 04](Rjemplo-04)
    * [Reto 04](Reto-04)
+* Reto final
+   * [Reto 05](Reto-05)
 
 * Postwork
     * [Postwork](postwork/readme.md)

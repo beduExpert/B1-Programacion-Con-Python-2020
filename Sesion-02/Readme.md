@@ -29,6 +29,9 @@
 	- [Ejemplo 06](Ejemplo-06)
 	- [Reto 06](Reto-06)
 
+- Reto Final
+	- [Reto 07](Reto-07)
+
 
 - [Postwork](Postwork)
 
