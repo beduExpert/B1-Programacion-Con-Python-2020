@@ -1,9 +1,9 @@
 ## Estructuras de control y funciones
 ### OBJETIVOS 
-- Incluir ciclos en nuestros programas
-- Utilizar listas, sets, tuplas
-- Utilizar diccionarios
-- Utilizar funciones
+- Utilizar argumentos de tamaño variable y argumentos con nombre (Args y Kwargs)
+- Importar módulos y paquetes externos
+- Instalar paquetes usando pip
+- Escribir nuestros modulos y paquetes
  
 
 #### ORGANIZACION DE LA CLASE 
