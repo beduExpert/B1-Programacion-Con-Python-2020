@@ -1,8 +1,6 @@
-# Sesión 05
+# Sesión 05: Programación orientada a objetos II 
 
-## Programación orientada a objetos II 
-
-### OBJETIVOS 
+## :dart: Objetivos
 
 - Utilizar polimorfismo.
 - Realizar sobrecarga de métodos y operadores.
@@ -10,7 +8,7 @@
 - Utilizar try y except para manejar errores en ejecución.
 - Conectarse a bases de datos SQLite
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - Polimorfismo y sobrecarga de métodos
 	- [Ejemplo 01](Ejemplo-01)
