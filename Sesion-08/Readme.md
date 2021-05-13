@@ -1,12 +1,10 @@
-# Sesión 08
+# Sesión 08: Pytest
 
-## Pytest
-
-### OBJETIVOS 
+## :dart: Objetivos
 
 - Crear test unitarios utilizando pytest
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - Test unitarios
 
