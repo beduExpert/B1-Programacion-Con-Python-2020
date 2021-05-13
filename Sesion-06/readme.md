@@ -1,14 +1,13 @@
-# Sesión 06
-## Manipulación de archivos, JSON, CSV y excepciones
+# Sesión 06: Manipulación de archivos, JSON, CSV y excepciones
 
-### Objetivos
+## :dart: Objetivos
 
 - Abrir, crear y editar archivos de textos con Python
 - Crear archivos CSV mediante las librería ídem
 - Convertir diccionarios a JSON y viceversa, así como archivos
 - Generar códigos que funcionen como scripts que aceptan argumentos
 
-### Organización de la sesión
+## 📂 Organización de la clase
 
 * Archivos de texto plano
    * [Ejemplo 01](Ejemplo-01)
