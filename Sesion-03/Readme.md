@@ -1,14 +1,14 @@
-# Sesión 03
+# Sesión 03: Estructuras de control y funciones
 
-## Estructuras de control y funciones
-### OBJETIVOS 
+## :dart: Objetivos
+
 - Utilizar argumentos de tamaño variable y argumentos con nombre (Args y Kwargs)
 - Importar módulos y paquetes externos
 - Instalar paquetes usando pip
 - Escribir nuestros modulos y paquetes
  
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - Args y kwargs
 	- [Ejemplo 01](Ejemplo-01)
