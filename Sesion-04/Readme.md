@@ -1,8 +1,6 @@
-# Sesión 04
+# Sesión 04: Programación orientada a objetos I
 
-## Programación orientada a objetos I
-
-### OBJETIVOS 
+## :dart: Objetivos
 
 - Conoceras los fundamentos de POO
 - Podrás crear objetos a partir de una clase
@@ -11,7 +9,7 @@
 - Crearás clases heredadas
 
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - Clases y objetos
 
