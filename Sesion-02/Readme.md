@@ -1,14 +1,14 @@
-# Sesión 02
+# Sesión 02: Estructuras de control y funciones
 
-## Estructuras de control y funciones
-### OBJETIVOS 
+## :dart: Objetivos
+
 - Incluir ciclos en nuestros programas
 - Utilizar listas, sets, tuplas
 - Utilizar diccionarios
 - Utilizar funciones
  
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - Listas
 	- [Ejemplo 01](Ejemplo-01)
