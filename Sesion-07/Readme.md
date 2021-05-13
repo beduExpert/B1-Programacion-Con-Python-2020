@@ -1,12 +1,10 @@
-# Sesión 07
+# Sesión 07: Flask
 
-## Flask
-
-### OBJETIVOS 
+## :dart: Objetivos
 
 - Crear aplicaciones web usando Flask
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - Introducción a Flask
 
