@@ -1,8 +1,7 @@
-# Sesión 01
+# Sesión 01: Crea tu primera aplicación con python 
 
-## Crea tu primera aplicación con python 
+## :dart: Objetivos
 
-### OBJETIVOS 
 - Conocer la sintaxis básica de Python.
 - Utilizar variables y tipos  de datos; operadores lógicos y condicionales.
 - Crear sus primeros programas en Python.
@@ -10,7 +9,7 @@
 
  
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - Introducción e instalación
 	- [Ejemplo 01](Ejemplo-01)
