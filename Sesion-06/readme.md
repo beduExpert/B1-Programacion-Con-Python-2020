@@ -19,7 +19,7 @@
    * [Ejemplo 03](Ejemplo-03)
    * [Reto 03](Reto-03)
 * Scripts y argumentos
-   * [Ejemplo 04](Rjemplo-04)
+   * [Ejemplo 04](Ejemplo-04)
    * [Reto 04](Reto-04)
 * Reto final
    * [Reto 05](Reto-05)
