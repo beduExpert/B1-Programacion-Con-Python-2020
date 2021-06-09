@@ -1,6 +1,6 @@
 
 
-## Manejo de errores y exceciones
+## Manejo de errores y excepciones 
 
 ### OBJETIVO
 
