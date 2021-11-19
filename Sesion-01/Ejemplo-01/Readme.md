@@ -1,11 +1,11 @@
 # Haz tu primera aplicación con python
 
-¡Bienvenido a Python! Python es un lenguaje de programación de alto nivel, fácil de usar, versátil y potente. Es uno de los lenguajes más populares actualmente según el ínidce de TIOBE:
+¡Bienvenido a Python! Python es un lenguaje de programación de alto nivel, fácil de usar, versátil y potente. Es uno de los lenguajes más populares actualmente según el índice de TIOBE:
 
 
 ## Objetivo
 
-* Conocer la sintaxis básica de Python, variables y tipos de datos; operadores lógicos y condiciones, así como ciclos de control.
+* Conocer la sintaxis básica de Python, variables y tipos de datos; operadores lógicos, condiciones, así como ciclos de control.
 
 ## Usos
 
