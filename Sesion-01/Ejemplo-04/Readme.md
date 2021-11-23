@@ -18,16 +18,23 @@ Las cadenas de texto son un tipo en Python que nos permite manipular texto, el c
 Las cadenas pueden usar los operadores + (concatenar cadenas) y * (Concatena la misma cadena múltiples veces)
 
 
-```
+```python
 #Esto es una cadena                                                                                            
 d = "Hola mundo"                                                
 
-# Podemos comprobar el dato con type(), en inglés se les conoce como string                                                                                                                                              
+# Podemos comprobar el dato con type(), en inglés se les conoce como string
 print(type(d))
 
 # Podemos utilizar comillas simples, o tres comillas dobles                                                                                                                         
 e = 'Saludos'
 f = """What's your name?"""
+
+# Las comillas triples pueden abarcar multiples lineas de codigo
+# Con comillas simples podemos colocar saltos de linea con \n
+
+g = "Welcome!\nEnjoy your stay"
+h = """Bienvenido!
+Disfruta tu estancia"""
 
 #Las cadenas pueden tener unicamente 1 caracter, o incluso 0
 un_caracter = 'a'

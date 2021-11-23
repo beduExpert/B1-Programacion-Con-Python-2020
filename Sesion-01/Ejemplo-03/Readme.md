@@ -1,22 +1,24 @@
 
 ## Operadores aritmeticos y lógicos
 
-### OBJETIVO
+## Objetivo
 
 - Utilizar operadores lógicos.
 - Utilizar operadores aritmeticos.
 
-#### REQUISITOS
+## Requisitos
 
 1. Python 3
 
-#### DESARROLLO
+## Desarrollo
 
 Los operadores aritmeticos permiten realizar operaciones aritmeticas con datos enteros o flotantes.
 
-![imagen](https://static.platzi.com/media/user_upload/1-a5257be9-296d-40be-b7bf-3885edead804.jpg)
+![Operadores aritmeticos](images/operadores.webp)
 
-Los operadores lógicos trabajn con valores de verdad (True y False), y son equivalentes a las compuertas lógicas AND, OR y NOT.
+Los operadores lógicos trabajan con valores de verdad (True y False), y son equivalentes a las compuertas lógicas AND, OR y NOT.
+
+![Operadores lógicos](images/operadores2.JPG)
 
 operadores.py muestra la forma de usar algunos operadores logicos.
 
