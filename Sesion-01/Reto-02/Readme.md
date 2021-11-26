@@ -1,24 +1,26 @@
  
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
 ## Operadores
 
-### OBJETIVO 
+## Objetivo
 
 - Usar operadores aritmeticos y lógicos
 
-#### REQUISITOS 
+## Requisitos
 
 1. Python 3
 
-#### DESARROLLO
+## Desarrollo
 
-- Crea un programa que solicite 2 numeros e imprima los siguientes resultados
-	- Resta usando el operador -
-	- Modulo usando el operador %
-- Ademas realizar el or entre un valor true y un false
-	
+- Crea un programa que solicite 2 numeros mediante input
+- Guarda y convierte los datos a número con punto decimal (float) 
+- Imprime los siguientes resultados
+	- Suma
+	- Resta
+	- Multiplicacion
+	- División
+	- Módulo
+
+
 
 <details>
 	#Adquiere los datos
