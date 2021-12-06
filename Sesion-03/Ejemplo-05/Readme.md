@@ -1,6 +1,3 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
 ## Docstrings
 
 ### OBJETIVO
@@ -13,11 +10,11 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Cuando escribimos software es de utilidad dar una ayuda a quien podria consumirlos, para esto nos sirven los docstrings.
+Cuando escribimos software es de utilidad dar una ayuda a quien podria consumirlos, para esto nos sirven los docstrings. Esta ayuda nos sirve incluso si sólo nosotros trabajamos en el proyecto, para recordar que hace cada función y como se utiliza.
 
-Los docstrings se generan entre comillas triples
+Los docstrings se generan entre comillas triples.
 
-Para agregar ayuda general en un paquete, se hace en el archivo __init__.py
+Para agregar ayuda general en un paquete, se hace en el archivo `__init__.py`.
 ```
 """Paquete de funciones sencillas"""
 ```

@@ -14,7 +14,9 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Los paquetes nos permiten reunir varios modulos dentro de una carpeta, para que python reconozca una carpeta como un modulo, es necesario que tenga un archivo con nombre __init__.py (incluso puede estar vacio)
+Los paquetes nos permiten reunir varios modulos dentro de una carpeta, para que python reconozca una carpeta como un modulo, es recomendable que tenga un archivo con nombre `__init__.py` (incluso puede estar vacio).
+
+Este archivo `__init__.py` se ejecuta cuando importamos la librería por primera vez. Aunque las nuevas versiones de Python lo consideran opcional, es bueno agregarlo por compatibilidad.
 
 La siguiente imagen, muestra un ejemplo de estructura de un paquete
 

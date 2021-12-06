@@ -2,22 +2,26 @@
 
 ## Importar modulos de la libreris estandar y de librerias externas
 
-### OBJETIVO
+### Objetivo
 
-- Importar modulos de libreria estandar
-- Instalar Pip
+- Importar modulos de libreria estandar u otras librerías instaladas
+- Revisar la instalación de Pip
 - Instalar modulos desde Pip
 - Importar modulos externos
 
-#### REQUISITOS
+#### Requisitos
 
 1. Python
 2. Pip 
 3. Conexión a internet para instalar modulos
 
-#### DESARROLLO
+#### Desarrollo
 
-La libreria estandar se incluye preinstalada en python y contiene una serie de modulos para distintos propositos, para utilizarlas usamos la palabra reservada import.
+Python es un lenguaje con "baterías incluidas", esto significa que contiene paquetes incluidos para comenzar a trabajar con Python, así como un gestor de paquetes, que nos permite agregar mas librerías de forma sencilla. Las librerías contienen código escrito por otras personas, que nos agregan funcionalidad, sin tener que escribirla desde cero, por ejemplo, para leer un archivo CSV.
+
+La libreria estandar contiene una serie de modulos para distintos propositos.
+
+Para utilizar cualquier libería, usamos la palabra reservada import.
 
 ```
 # Importar modulos desde la libreria estandar

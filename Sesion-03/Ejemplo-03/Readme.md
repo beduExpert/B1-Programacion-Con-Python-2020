@@ -4,8 +4,8 @@
 
 ### OBJETIVO
 
-- Crear modulos
-- Importar funciones desde modulos 
+- Crear modulos propios
+- Importar funciones desde módulos
 
 #### REQUISITOS
 
@@ -13,7 +13,7 @@
 
 #### DESARROLLO
 
-Los modulos nos permiten estructurar nuestro código en más de un archivo, cualquier archivo .py puede considerarse un modulo
+Los modulos nos permiten estructurar nuestro código en más de un archivo, cualquier archivo .py puede considerarse un modulo.
 
 Para acceder a código que se encuentra en un modulo (en la misma carpeta) usamos import con el nombre del archivo(sin el .py)
 
