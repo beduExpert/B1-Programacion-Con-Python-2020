@@ -4,6 +4,7 @@
 
 ### OBJETIVO
 
+- Conocer el concepto de herencia de POO
 - Escribir clases heredadas
 
 #### REQUISITOS
@@ -14,7 +15,7 @@
 
 Proceso en el cual una clase, obtiene los atributos y métodos de otra(s), y para opcionalmente extenderlos y cambiarlos. La nueva clase se conoce como hija y la que se toma como base como padre.
 
-```
+```python
 class Animal():
     def __init__(self, nombre='animal', especie='animal', sonido=''):
         self.nombre = nombre
@@ -40,4 +41,22 @@ Nemo.info()
 Nemo.nadar()
 Nemo.grito()
 
+```
+
+En este caso, Pez, aparte de su método nadar, puede utilizar los métodos de Animal.
+Por su parte, `__init__`, cambió su funcionalidad.
+
+Para extender su funcionalidad, se puede utilizar la función super, la cual 
+manda llamar el método del padre, para antes o después agregar código extra:
+
+```python
+
+class Humano(Animal):
+
+    def grito(self):
+        super().grito()
+        print("Despues de gritar, al humano le duele la garganta.")
+
+pancho = Humano("Pancho", "Homo sapiens", "AAAAAAA")
+pancho.grito()
 ```

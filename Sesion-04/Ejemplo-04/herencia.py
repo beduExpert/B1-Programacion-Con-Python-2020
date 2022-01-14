@@ -23,3 +23,11 @@ Nemo.info()
 Nemo.nadar()
 Nemo.grito()
 
+
+class Humano(Animal):
+    def grito(self):
+        super().grito()
+        print("Despues de gritar, al humano le duele la garganta.")
+
+pancho = Humano("Pancho", "Homo sapiens", "AAAAAAA")
+pancho.grito()

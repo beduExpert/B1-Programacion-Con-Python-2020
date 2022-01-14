@@ -1,11 +1,9 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Metodos
+## Atributos y métodos
 
 ### OBJETIVO
 
-- Incluir metodos dentro de las clases
+- Incluir atributos y metodos dentro de las clases
 - Incluir constructores o inicializadores
 - Incluir destructores y otros metodos integrados
 
@@ -15,16 +13,24 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Los métodos son funciones asociadas al comportamiento de los objetos de cierta clase, deben definirse usando init en el cuerpo de la clase.
+Los atributos y métodos permiten contener elementos similares a las variables y funciones, dentro de cada objeto.
+
+Los atributos, son varaibles, las cuales pueden tener valores diferentes entre cada instancia de la misma clase.
+Se definen o se llaman con un punto después del objeto.
+
+Los métodos son funciones asociadas al comportamiento de los objetos de cierta clase, deben definirse usando `__init__` en el cuerpo de la clase.
+También se llaman con un punto después del objeto, pero necesita después
 
 En el ejemplo  persona.py se crearon tres metodos 
 
-```
+```python
 class persona():
     def asignar_nombre(self,nombre):
-        self.nombre = nombre
-    def saluda(self):
+        self.nombre = nombre  # Atributo
+    
+    def saluda(self):  
         print("hola, soy {}".format(self.nombre))
+    
     def get_nombre(self):
         return self.nombre
 ```
@@ -63,13 +69,13 @@ print(objeto)
 
 ```
 
-Usualmente en el constructor se obtienen parametros de la clase, a diferencia de otros lenguajes de programación en Python no se pueden incluir múltiples constructores, pero si se usan parametros nombrados, se pueden poner valores por default.
+Usualmente en el constructor se obtienen parametros de la clase, a diferencia de otros lenguajes de programación en Python no se pueden incluir múltiples constructores, pero si se usan parametros se pueden poner valores por default.
 
 Se muestra un ejemplo en constructores.py
 ```
 #Ejemplo de clase con constructor y __str__
 class Mascota:
-    def __init__(self,especie = 'animal' , edad = 0):
+    def __init__(self, especie = 'animal' , edad = 0):
         self.especie = especie
         self.edad = edad
     def __str__(self):
@@ -83,6 +89,3 @@ print(rufo)
 bicho = Mascota(edad=2)
 print(bicho)
 ```
-
-
-
