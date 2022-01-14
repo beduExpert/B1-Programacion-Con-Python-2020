@@ -1,7 +1,6 @@
  
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
+
 ## Titulo del Ejemplo 
 
 ### OBJETIVO 
@@ -15,7 +14,12 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
+Vamos a continuar aplicando los conceptos a nuestro programa de autos usados.
+
 - Modifica el código del reto 4 de la sesión pasada para sobrecargar el método avanzar de la clase Vehiculo en sus clases hijas, para ser mas descriptiva de acuerdo al tipo de vehiculo
+- Agrega verificaciones para revisar si el auto puede avanzar: si no tiene gasolina o la batería esta gastada, no debería ser capaz de avanzar.
+- También, agrega la representación en texto con `__str__` si no la has agregado.
+  Deberá mostrar información del auto. Es una de los métodos muy utilizados por polimorfismo.
 
 <details>
 	class Vehiculo:

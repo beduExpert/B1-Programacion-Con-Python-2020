@@ -19,6 +19,9 @@ de un auto, no esperamos que pueda modificarlo. Después de todo, ¡no queremos 
 
 1. Convierte el atributo de kilometraje en un valor privado. Si no lo tiene, créalo.
 2. Crea una función para revisar el kilometraje.
+3. Agrega un nuevo atributo: capacidad del tanque. Haz que se también un elemento privado, pero accesible a través de
+   un método.
+4. Crea un método privado: Activar alarma. Puede ser sólo imprimar un mensaje.
 
 
 <details>
