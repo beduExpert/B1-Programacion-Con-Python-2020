@@ -15,11 +15,13 @@
 
 Crear un script de Python que permita conocer una lista de archivos en el directorio, mostrado en pantalla con formato JSON.
 
+Utiliza la librería `os` para obtener una lista de archivos y su información.
+
 El JSON deberá incluir los siguientes elementos: nombre, tamaño, fecha de modificación.
 
 
 
-```
+```python
 $ python info_archivos.py 
 [
     {

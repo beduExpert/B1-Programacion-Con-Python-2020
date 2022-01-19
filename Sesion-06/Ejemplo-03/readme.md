@@ -14,7 +14,7 @@ JSON (JavaScript Object Notation), es un formato basado en texto, utilizado para
 
 
 `usa_json.py`
-```
+```python
 import json
 
 #En python los diccionarios pueden convertirse a json y viceversa
@@ -48,7 +48,7 @@ Los elementos de un diccionario de Python, son convertidos al tipo de dato mas c
 La 's' en los comandos de json (load**s** y dump**s**), indican que se trata de un string. También podemos manejar archivos mediante *load* y *dumps*
 
 `archivos_json.py`
-```
+```python
 import json 
 from datetime import datetime
 

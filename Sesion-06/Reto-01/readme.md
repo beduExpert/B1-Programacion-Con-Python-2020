@@ -13,18 +13,20 @@
 
 Pedir al usuario una lista, con nombre un nombre de auto, color, nivel de equipamiento(bajo, medio,alto) y precio. Guardar la información en un archivo llamado autos.txt, separado por tabulador. Anexar al final la información si ya existe el archivo.
 
+Una vez que un auto ha sido agregado, preguntar si hay que agregar otro auto, y repetir el proceso en caso de que sea positiva la respuesta. Puedes apoyarte de un ciclo para repetir la labor hasta que digan No.
+
 ```
 Inserte nombre del auto: Rio
 Inserte color: rojo
 inserte nivel de equipo:medio
 Inserte precio: 210 000
-Agregar otro hotel (s/N)? s
+Agregar otro auto (s/N)? s
 
 Inserte nombre del auto: swift
 Inserte color: amarillo
 inserte nivel de equipo:bajo
-Inserte precio: 11111
-Agregar otro hotel (s/N)? N
+Inserte precio: 11 111
+Agregar otro auto (s/N)? N
 ```
 Para concatenar a un archivo, puedes usar el tipo de acceso 'a' (append)
 
