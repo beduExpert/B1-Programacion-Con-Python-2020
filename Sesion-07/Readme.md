@@ -1,35 +1,34 @@
-# Sesión 07: Flask
+# Sesión 08: Pytest
 
 ## :dart: Objetivos
 
-- Crear aplicaciones web usando Flask
+- Crear test unitarios utilizando pytest
 
 ## 📂 Organización de la clase
 
-- Introducción a Flask
+- Test unitarios
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Jinja y css en templates
+
+- Test unitarios avanzados
 
 	- [Ejemplo 02](Ejemplo-02)
-	- [Reto 01](Reto-01)
-
-
-- Rutas y parámetros
-
-	- [Ejemplo 03](Ejemplo-03)
-	- [Reto 01](Reto-01)
-
-
-- Rutas avanzadas
-
-	- [Ejemplo 04](Ejemplo-04)
 	- [Reto 02](Reto-02)
 
+- Opciones al ejecutar tests
 
-- Formularios
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
 
-	- [Ejemplo 05](Ejemplo-05)
+- Parametrizacion de tests
+	- [Ejemplo 04](Ejemplo-03)
+	- [Reto 04](Reto-03)
 
+- Test ejecutado en métodos de clase
+
+	- [Ejemplo 04](Ejemplo-04)
+	- [Reto 04](Reto-04)
+- Reto final
+	- [Reto 06](Reto-06)

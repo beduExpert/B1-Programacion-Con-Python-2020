@@ -1,99 +1,88 @@
 
-## Test unitarios avanzados
+## Titulo del Ejemplo
 
 ### OBJETIVO
 
-- Se crearan archivos con múltiples test para una misma función
-- Se abordarán opciones al ejecutar tests.
+- Incluir Jinja en nuestras plantillas
+- Incluir estilos en nuestras páginas web usando archivos css
 
 #### REQUISITOS
 
 1. Python 3
-2. Pytest
+2. Flask
 
 #### DESARROLLO
 
-Al crear tests unitarios se puede establecer condiciones dentro de los assert que no unicamente evaluan la igualdad de la salida de la función con un valor, de hecho dentro de los assert se puede colocar cualquier expresión que devuelva un valor booleano.
+Jinja 2 es un motor de plantillas para Python, lo que significa que le permite al desarrollador producir páginas web, que contienen, por ejemplo, código html base y marcadores de posición para que Jinja 2 los llene. Basado en el sistema de plantillas de Django, Jinja es uno de los más utilizados, ya que permite a los desarrolladores usar conceptos poderosos como sandboxing y herencia para permitir que una plantilla se reutilice fácilmente.
+ 
+Jinja nos permite usar bloques con la siguiente forma, y expandirlo desde otro archivo.
+```
+{% block body %} {% endblock %}
+```
+```
+{% block body %} 
+<h1>
+    PARTE 2
+</h1>
+{% endblock %}
+```
 
-Por ejemplo, la siguiente función evalua el uso de la función suma con entradas de tipo str.
+En el ejemplo de esta carpeta puedes ver como el archivo extender.html inserta dentro de pagina.html usando jinja
+
+Otro tipo de bloques jinja es el delimitado por {{ }}, los cuales nos permiten insertar código dentro de los html
 
 ```
-def test_suma_string():
-    resultado = operaciones.suma('Hola ', 'Mundo')
-    assert resultado == 'Hola Mundo'
-    assert type(resultado) is str
-    assert len(resultado) > 0
-```
-Además se pueden tener distintas funciones para testear la misma función, por ejemplo
-```
-import operaciones
-
-def test_suma():
-    assert operaciones.suma(2,3) ==5
-    assert operaciones.suma(2)==2
-
-def test_producto():
-    assert operaciones.producto(3,5) == 15
-    assert operaciones.producto(2) == 2
-
-def test_suma_string():
-    resultado = operaciones.suma('Hola ', 'Mundo')
-    assert resultado == 'Hola Mundo'
-    assert type(resultado) is str
-    assert len(resultado) > 0
-
-def test_producto_string():
-    resultado = operaciones.producto('Hola ', 3)
-    assert resultado == 'Hola Hola Hola '
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css')}}">
 
 ```
-si ejecutamos pytest sin ningún parametro:
+archivo pagina.html
 ```
-$pytest
-```
-buscará de forma automática los archivos con la forma test_archivo.py y en ellos, las funciones  test_funcion()
-```
-$pytest
-======================================================================================== test session starts ========================================================================================
-platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
-rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-02
-plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-collected 4 items                                                                                                                                                                                   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css')}}">
+    {% block head %} {% endblock %}
 
-test_operaciones.py ....                                                                                                                                                                      [100%]
+</head>
+<body>
 
-========================================================================================= 4 passed in 0.02s =========================================================================================
+    {% block body %} {% endblock %}
+</body>
+</html>
 ```
-Si queremos obtener una mayor información, podemos usar la opción -v (verbose), mostrando el resultado individual para cada test.
-```
-$pytest -v
-======================================================================================== test session starts ========================================================================================
-platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/luisams/anaconda3/bin/python
-cachedir: .pytest_cache
-hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-02/.hypothesis/examples')
-rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-02
-plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-collected 4 items                                                                                                                                                                                   
 
-test_operaciones.py::test_suma PASSED                                                                                                                                                         [ 25%]
-test_operaciones.py::test_producto PASSED                                                                                                                                                     [ 50%]
-test_operaciones.py::test_suma_string PASSED                                                                                                                                                  [ 75%]
-test_operaciones.py::test_producto_string PASSED                                                                                                                                              [100%]
+extender.html
 
-========================================================================================= 4 passed in 0.03s =========================================================================================\
 ```
-Se puede seleccionar el archivo de test a ejecutar con la sintaxis vista en el ejemplo anterior, o bien seleccionar una función de test especifica.
-```
-$pytest test_operaciones.py::test_suma
-======================================================================================== test session starts ========================================================================================
-platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
-rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-02
-plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-collected 1 item                                                                                                                                                                                    
+{% extends 'pagina.html' %}
+{% block head %}
 
-test_operaciones.py .                                                                                                                                                                         [100%]
+{% endblock %}
 
-========================================================================================= 1 passed in 0.01s =========================================================================================
+{% block body %} 
+<h1>
+    PARTE 2
+</h1>
+{% endblock %}
 ```
+
+
+Los archivos css (hojas de estilos en cascada) nos permiten incluir plantillas de estilos  para definir y crear la presentación de un documento estructurado escrito en html.
+
+Coloca los archivos css en la carpeta static y no olvides linkearlos a la página.
+
+Ejemplo de archivo css
+```
+body{
+    margin:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:green;
+    
+}
+```
+Si ejecutas flask3.py en un navegador verás que la hoja de estilos habrá modificado el color y fuente del texto en el body.
+
+
 
 

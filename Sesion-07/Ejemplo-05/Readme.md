@@ -1,155 +1,131 @@
 
-## Rutas avanzadas
+## Tests sobre clases y métodos
 
 ### OBJETIVO
 
-- Crear páginas con formularios usando Flask
+- Crear test para métodos
 
 #### REQUISITOS
 
-1. Python 3
-2. Flask
+1. Pytest
+2. Python 3
 
 #### DESARROLLO
 
-Para utilizar formularios en Flask podemos utilizar el módulo wtforms, es posible instalarlo con pip
+Hasta el momento hemos visto ejemplos de test unicamente con funciones, pero cuando trabajamos usando el paradigma orientado a objetos también se puede realizar tests unitarios, en estos casos la unidad básica a testear son los métodos de clase y se realiza de una manera similar  a cuando se testean funciones.
+
+Por ejemplo, si tenemos la siguiente definición de clase :
+```
+import json
+
+class EstudianteDB:
+    def __init__(self):
+        self.__data = None
+
+    def connect(self, data_file):
+        with open(data_file) as json_file:
+            self.__data = json.load(json_file)
+
+    def get_data(self,nombre):
+        for estudiante in self.__data['estudiantes']:
+            if estudiante ['nombre'] == nombre:
+                return estudiante
 
 ```
-$pip install wtforms
+La cual tiene métodos para conectarse a una base de datos json de estudiantes y devolver datos, si tenemos el siguiente json de prueba
 ```
-
-El archivo formulario.py, muestra como se crea un formulario usando wtforms con tres campo de distinto tipo creando una clase heredada de Form
-
+{
+    "estudiantes": [
+        {
+            "id": 1,
+            "nombre": "Mario",
+            "resultado": "aprobado"
+        },
+        {
+            "id": 2,
+            "nombre": "Luigi",
+            "resultado": "reprobado"
+        }
+    ]
+}
 ```
-from wtforms import Form 
-from wtforms import StringField, TextField
-from wtforms.fields.html5 import EmailField
-
-class Formulario_usuario(Form):
-    usuario = StringField("Usuario")
-    correo = EmailField ("Correo electrónico")
-    comentario = TextField("Comentario")
-
+Pdemos crear el siguiente test para el método get_data
 ```
+from estudiante import EstudianteDB
+import pytest
 
-El archivo principal, main.py nos muestra como incorporamos a Flask nuestra plantilla dentro de la función index
+def test_datos_luigi():
+    db = EstudianteDB()
+    db.connect('data.json')
+    luigi = db.get_data('Luigi')
+    assert luigi['id'] == 2
+    assert luigi['nombre'] == 'Luigi'
+    assert luigi['resultado'] == 'reprobado'
 
+def test_datos_mario():
+    db = EstudianteDB()
+    db.connect('data.json')
+    luigi = db.get_data('Mario')
+    assert luigi['id'] == 1
+    assert luigi['nombre'] == 'Mario'
+    assert luigi['resultado'] == 'aprobado'
 ```
-from flask import Flask
-from flask import render_template
-from flask import request
-import formulario
-
-app = Flask(__name__)
-@app.route('/', methods = ['GET', 'POST'])
-def index():
-    form_usuario = formulario.Formulario_usuario(request.form)
-    titulo = "Modulo Flask"
-    if request.method == 'POST':
-        print (form_usuario.usuario.data)
-        print (form_usuario.correo.data)
-        print (form_usuario.comentario.data)
-    return render_template('index.html', title = titulo, form = form_usuario)
-
-if __name__ == "__main__":
-    app.run(debug=True)
+Al ejecutar este test, podemos ver que el método lo pasa
 ```
-Podemos observar que se incluye el método POST, debido a que es utilizado para capturar los datos desde la página web
+$pytest -v test_estudiante.py 
+======================================================================================== test session starts ========================================================================================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/luisams/anaconda3/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-05/.hypothesis/examples')
+rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-05
+plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
+collected 2 items                                                                                                                                                                                   
 
+test_estudiante.py::test_datos_luigi PASSED                                                                                                                                                   [ 50%]
+test_estudiante.py::test_datos_mario PASSED   
 ```
-@app.route('/', methods = ['GET', 'POST'])
-```
-Se crea un objeto de la clase que declaramos para el formulario:
-```
-form_usuario = formulario.Formulario_usuario(request.form)
-```
-En caso de recibir datos por el formulario, los vamos a imprimir en la terminal
-```
-    if request.method == 'POST':
-        print (form_usuario.usuario.data)
-        print (form_usuario.correo.data)
-        print (form_usuario.comentario.data)
-```
+Él código anterior tiene el problema que para cada prueba, necesita generar una instancia nueva de la clase y reconectarse a la base de datos, esto se puede evitar usando las siguientes funciones:
+- setup_module(), se ejecuta antes de los test, aquí podemos crear objetos o conectarnos a bases de datos
+- teardown_module() se ejecuta después de los tests, aqui podemos cerrar conexiones o archivos
 
-A continuación creamos un macro que nos permita colocar los campos en html
+Por ejemplo el código anterior se puede convertir en el siguiente:
 ```
-{% macro render_field(field) %}
-    <td> {{field.label}}
-    <dd> {{ field(**kwargs)|safe }}
+from estudiante import EstudianteDB
+import pytest
 
-{% endmacro %}
+db = None
+def setup_module(module):
+    global db 
+    db = EstudianteDB()
+    db.connect('data.json')
+
+#teardown_module sirve para acciones que de realizan al final
+#def teardown_module(module):
+
+
+def test_datos_luigi():
+    luigi = db.get_data('Luigi')
+    assert luigi['id'] == 2
+    assert luigi['nombre'] == 'Luigi'
+    assert luigi['resultado'] == 'reprobado'
+
+def test_datos_mario():
+    luigi = db.get_data('Mario')
+    assert luigi['id'] == 1
+    assert luigi['nombre'] == 'Mario'
+    assert luigi['resultado'] == 'aprobado'
 ```
-En el archivo index colocaremos el cófigop jinja para extender nuestra página
-
+Al ejecutar este test,tenemos el siguiente resultado.
 ```
-{% extends 'base.html' %}
-{% block title %} {{title}} {% endblock %}
+$ pytest -v test_estudiante2.py 
+======================================================================================== test session starts ========================================================================================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/luisams/anaconda3/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-05/.hypothesis/examples')
+rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-05
+plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
+collected 2 items                                                                                                                                                                                   
 
-{% block content %}
-
-    {% from "_macro.html" import render_field%}
-        <form name="sentMessage" id="contactForm" method="POST">
-            <p>
-            {{ render_field(form.usuario) }}
-            </p>
-            <p>
-            {{ render_field(form.correo) }}
-            </p>
-            <p>
-            {{ render_field(form.comentario) }}
-            </p>
-            <p>
-                <button type="submit">Enviar</button>
-            </p>
-        </form>
-
-{% endblock %}
-```
-El bloque title, toma la variable tilte del archivo python y lo coloca en el título de la página
-
-El segundo bloque, utiliza el macro creado para hacer distintos campos en la página y lo envia usando el método POST
-```
- {% block content %}
-
-    {% from "_macro.html" import render_field%}
-        <form name="sentMessage" id="contactForm" method="POST">
-            <p>
-            {{ render_field(form.usuario) }}
-            </p>
-            <p>
-            {{ render_field(form.correo) }}
-            </p>
-            <p>
-            {{ render_field(form.comentario) }}
-            </p>
-            <p>
-                <button type="submit">Enviar</button>
-            </p>
-        </form>
-
-{% endblock %}
-```
-
-base.html contiene la plantilla básica html
-
-```
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <title> {% block title%} {% endblock %} </title>
-</head>
-<body>
-    {% block content %}
-    {% endblock %}
-    
-</body>
-</html>
-```
-Al montar el servidor tenemos una página con 3 campos, al llenarlos y presionar el boton podemos ver en terminal:
-
-![imagen](pagina.png)
-
-```
-
-![imagen](https://lh6.googleusercontent.com/proxy/h4HOTupkQLgcHyCcW-3RQzRNSBPoA8ntFEG9IDARFVmBK5ENE_BI9TNb8IprYvwuLc-qWcMUveEZb-FRoFnWh9RjI_oDZ3Us3H5d8s2PlifV5njS1wQQwQ=w1200-h630-p-k-no-nu)
+test_estudiante2.py::test_datos_luigi PASSED                                                                                                                                                  [ 50%]
+test_estudiante2.py::test_datos_mario PASSED    
 ```

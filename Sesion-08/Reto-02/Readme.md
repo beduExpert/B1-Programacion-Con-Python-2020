@@ -1,94 +1,75 @@
 
-	
-## Reto tests 2 
+## Titulo del Ejemplo 
 
 ### OBJETIVO 
 
-- Crear tests múltiples y con distintos tipos de sets
-- Seleccionar tests a ejecutar
+- Utilizar rutas con argumentos validados
 
 #### REQUISITOS 
 
 1. Python 3
-2. Pytest
+2. Flask
 
 #### DESARROLLO
 
-1. Para la función de promedio crea múltiples tests (puedes dividirlos en argumentos int y float)
-2. Agrega en los tests verificación por valor y por tipo
-3. Desde terminal realiza la ejecución de:
-	- Ambos tests
-	- Primer test
-	- Segundo test
+- Crea un programa de calculadora similar al reto anterior(suma, resta, multiplicación división)
+- El programa debe aceptar los siguientes dos formatos para cada operación
+	- http://127.0.0.1:5000/calcula/5+4
+	- http://127.0.0.1:5000/calcula/5mas4
+- Si falta el segundo número debera obviar un 0(suma, resta) o un 1(multiplicación, división)
+- Se debe validar que los parámetros sean números enteros
+
 
 
 <details>
-	Se crea el siguiente archivo de tests
-	from promedio import promedio
+	Programa
 
-	def test_promedio_int():
-		resultado = promedio(2,4)
-		assert resultado == 3
-		assert type(resultado) is float
-		resultado = promedio(10,11)
-		assert resultado == 10.5
-		assert type(resultado) is float
+	from flask import Flask, render_template, url_for
+	from flask import request
+
+	app = Flask(__name__)
+
+	@app.route('/')
+	def index():
+		return "Programa de calculadora"
 
 
-	def test_promedio_float():
-		resultado = promedio(10.1,10.3)
-		assert resultado == 10.2
-		assert type(resultado) is float
-		resultado = promedio(6.0 ,6.5)
-		assert resultado == 6.25
-		assert type(resultado) is float
+	@app.route('/calcula/<int:num1>+<int:num2>')
+	@app.route('/calcula/<int:num1>mas<int:num2>')
+	@app.route('/calcula/<int:num1>mas')
+	@app.route('/calcula/<int:num1>+')
+	def suma(num1=0, num2=0):
+		res = num1+num2
+		return str(res)
+		
 
-	Para ejecutar ambos tests
+	@app.route('/calcula/<int:num1>-<int:num2>')
+	@app.route('/calcula/<int:num1>menos<int:num2>')
+	@app.route('/calcula/<int:num1>menos')
+	@app.route('/calcula/<int:num1>-')
+	def resta(num1=0, num2=0):
+		res = num1-num2
+		return str(res)    
 
-	$pytest -v
-	======================================================================================== test session starts ========================================================================================
-	platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/luisams/anaconda3/bin/python
-	cachedir: .pytest_cache
-	hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Reto-02/.hypothesis/examples')
-	rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Reto-02
-	plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-	collected 2 items                                                                                                                                                                                   
+	@app.route('/calcula/<int:num1>*<int:num2>')
+	@app.route('/calcula/<int:num1>por<int:num2>')
+	@app.route('/calcula/<int:num1>por')
+	@app.route('/calcula/<int:num1>*')
+	def multi(num1=0, num2=1):
+		res = num1*num2
+		return str(res) 
 
-	test_promedio.py::test_promedio_int PASSED                                                                                                                                                    [ 50%]
-	test_promedio.py::test_promedio_float PASSED       
-	                                                                                                                                           [100%]
+	@app.route('/calcula/<int:num1>/<int:num2>')
+	@app.route('/calcula/<int:num1>entre<int:num2>')
+	@app.route('/calcula/<int:num1>/')
+	@app.route('/calcula/<int:num1>entre')
+	def divide(num1=0, num2=1):
+		res = num1/num2
+		return str(res) 
 
-	========================================================================================= 2 passed in 0.02s =========================================================================================
-
-	Para ejecutar el primer test
-	$ pytest -v test_promedio.py::test_promedio_int
-	======================================================================================== test session starts ========================================================================================
-	platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/luisams/anaconda3/bin/python
-	cachedir: .pytest_cache
-	hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Reto-02/.hypothesis/examples')
-	rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Reto-02
-	plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-	collected 1 item                                                                                                                                                                                    
-
-	test_promedio.py::test_promedio_int PASSED                                                                                                                                                    [100%]
-
-	========================================================================================= 1 passed in 0.01s =========================================================================================
-
-	Para el segundo tests 
-	
-	$ pytest -v test_promedio.py::test_promedio_float
-	======================================================================================== test session starts ========================================================================================
-	platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/luisams/anaconda3/bin/python
-	cachedir: .pytest_cache
-	hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Reto-02/.hypothesis/examples')
-	rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Reto-02
-	plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-	collected 1 item                                                                                                                                                                                    
-
-	test_promedio.py::test_promedio_float PASSED                                                                                                                                                  [100%]
-
-	========================================================================================= 1 passed in 0.02s ========================================================================================
+	if __name__ == "__main__":
+		app.run(debug=True)
+		
 </details> 
-
 
 
