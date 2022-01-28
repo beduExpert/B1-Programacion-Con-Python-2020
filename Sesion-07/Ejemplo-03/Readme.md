@@ -165,7 +165,7 @@ def test_suma_string():
     assert len(resultado) > 0
 ```
 ```
-ytest test_operaciones_salta.py 
+pytest test_operaciones_salta.py 
 ======================================================================================== test session starts ========================================================================================
 platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
 rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-03
@@ -193,3 +193,20 @@ test_operaciones_salta.py::test_producto_string PASSED                          
 ```
 De forma similar si se requiere saltar un test bajo una condición, se puede usar la marca skipif(condicion) para decorar el test
 
+Por último, si queremos ver en la consola los print de nuestros test, incluso si pasan, se puede utilizar la opción `-s`
+
+```
+pytest test_print.py -s
+
+============== test session starts ===============
+platform linux -- Python 3.8.10, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /home/checor/dev/B1-Programacion-Con-Python-2020/Sesion-07/Ejemplo-03
+collected 1 item                                 
+
+test_print.py Valor de a: 15
+Valor de b: 5
+Resultado suma: 20
+.
+
+=============== 1 passed in 0.00s ================
+```

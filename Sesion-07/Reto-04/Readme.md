@@ -16,8 +16,19 @@
 
 #### DESARROLLO
 
-Crea un tests parametrizado para la función promedio que incluya al menos 10 tests
+Vamos a agregar parametrización al pequeño proyecto de calificaciones:
+Esto no ayudará a probar nuestra función con varias entradas y salidas, sin tener
+que estar repitiendo código.
 
+Crea mínimo 10 parámetros para la pruebas de la función de promedio de calificaciones.
+Procura que cubras al menos una vez los siguientes casos:
+
+- La calificación de 6.5, 7.5... no sube a 7 u 8.
+- Calificaciones como 5.9 si suben a 6.
+- Calificaciones negativas no son posibles, cambian a 0.
+- Calificaciones mayores a 10 no son posibles, cambian a 10.
+
+Revisa que el test corra correctamente con todos los parámetros.
 
 <details>
 

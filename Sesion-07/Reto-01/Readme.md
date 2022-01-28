@@ -15,11 +15,25 @@
 
 #### DESARROLLO
 
-1. Crea una función que genere  el promedio de dos números (inserta un error de forma intencional) 
-2. Crea un test para la función anterior
-3. Ejecuta el test
-4. Haz las correcciones a la función
-5. Vuelve a ejecutar el test
+Vamos a crear una función para promediar calificaciones, que utilizaremos
+en una app hipotética para entregar calificaciones:
+
+1. Crea una función que genere el promedio de dos o más números.
+1. Inserta un error de forma intencional.
+1. Crea un test para la función anterior. Coloca tres calificaciones, por ejemplo: 6, 8, 7.5.
+1. Ejecuta el test.
+1. Haz las correcciones a la función.
+1. Vuelve a ejecutar el test.
+
+Después validar que tu función es correcta, acaba de llegar un nuevo requerimiento:
+Se necesita redondear ese promedio, sin décima:
+
+1. Modifica el test **primero**, con el nuevo valor esperado.
+1. Corre el test y revisa que ahora ha fallado.
+1. Edita la función. Si tienes dudas de como redondear, revisa la función [round](https://www.w3schools.com/python/ref_func_round.asp)
+
+Esta practica de primero comenzar con el test y después con la implementación, se conoce como Test Driven Development.
+¡Algunos desarrolladores comienzan siempre escribiendo tests! 
 
 
 <details>

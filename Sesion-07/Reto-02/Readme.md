@@ -14,12 +14,19 @@
 
 #### DESARROLLO
 
-1. Para la función de promedio crea múltiples tests (puedes dividirlos en argumentos int y float)
-2. Agrega en los tests verificación por valor y por tipo
-3. Desde terminal realiza la ejecución de:
-	- Ambos tests
+Vamos a probar que nuestra función de promedios de calificaciones se comporta correctamente en varias situaciones.
+Crea un test para cada uno de estos casos.
+
+1. El test anteriormente creado.
+1. Un test para este caso: ¿Profesor, 6.5 sube a 7? La duda que corroe a muchos alumnos. Crea un test y valida su respuesta.
+1. Rango de calificaciones: Si por alguna razón el resultado es mayor a 10 o menor a 0, hay que colocarlo en el rango de 0 a 10.
+
+Edita la función para hacer pasar todos los tests.
+
+Para terminar, desde terminal realiza la ejecución de:
+	- Todos los tests
 	- Primer test
-	- Segundo test
+	- Tercer test
 
 
 <details>

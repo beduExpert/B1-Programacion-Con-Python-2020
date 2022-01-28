@@ -2,7 +2,14 @@
 
 ## :dart: Objetivos
 
-- Crear test unitarios utilizando pytest
+Por testing nos referimos a las pruebas de software con el fin de detectar fallas para posteriormente corregirlas.
+
+Seguramente habrás corrido tus programas realizados hasta este momento para revisar que funcionan correctamente.
+Esta parte de pruebas exploratorias, puede ser automatizada, para realizarse por scripts, en lugar de un humano.
+
+Automatizar las pruebas, permite que nuestro código sea menos propenso a errores, y también a la larga ahorra tiempo en pruebas manuales.
+
+Veamos como podemos realizar pruebas con Pytest, una librería que sigue la simplicidad de Python para pruebas.
 
 ## 📂 Organización de la clase
 

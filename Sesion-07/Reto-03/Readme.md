@@ -1,7 +1,3 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
 ## Reto tests 3
 
 ### OBJETIVO 
@@ -16,6 +12,9 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 - Pytest
 
 #### DESARROLLO
+
+Vamos a utilizar mark para poder realizar filtrados. Para eso dividiremos en dos partes
+los problemas: Pruebas que trabajen con enteros, y pruebas que trabajen con flotantes. 
 
 1. En los test realizados para el promedio agrega marks para realizar filtrados
 2. Ejecuta tests con las siguientes condiciones

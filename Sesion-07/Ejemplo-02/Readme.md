@@ -17,7 +17,7 @@ Al crear tests unitarios se puede establecer condiciones dentro de los assert qu
 
 Por ejemplo, la siguiente función evalua el uso de la función suma con entradas de tipo str.
 
-```
+```python
 def test_suma_string():
     resultado = operaciones.suma('Hola ', 'Mundo')
     assert resultado == 'Hola Mundo'
@@ -25,7 +25,7 @@ def test_suma_string():
     assert len(resultado) > 0
 ```
 Además se pueden tener distintas funciones para testear la misma función, por ejemplo
-```
+```python
 import operaciones
 
 def test_suma():

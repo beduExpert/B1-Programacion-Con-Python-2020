@@ -18,28 +18,27 @@ Pytest es un paquete que nos permite automatizar pruebas unitarias de software e
 
 Si no tienes instalado Pytest, puedes instalarlo usando PIP
 
-```
-$pip install pytest
+```bash
+$ pip install pytest
 ```
 
-Al utilizar Pytest, se suelen utilizar sentencias assert, este tipo de sentencias se evaluan, en caso de resultar True la ejecución de un programa continua, en caso contrario se lanza una señal de error.
+Al utilizar Pytest, se suelen utilizar sentencias `assert`, este tipo de sentencias se evaluan, en caso de resultar `True` la ejecución de un programa continua, en caso contrario se lanza una señal de error.
 
 Para realizar nuestro primer ejercicio de Pytest, necesitamos crear un módulo con las funciones a utilizar.
 
-```
+```python
 def suma(a , b=0):
     return a + b
 
 def producto(a,b=1):
     return a*b
-
 ```
 
-Para usar pytest creamos otro archivo .py, cuyo nombre comienza por test. En el cual importamos el módulo con las funciones a probar.
+Para usar pytest creamos otro archivo .py, cuyo nombre comienza por `test`. En el cual importamos el módulo con las funciones a probar.
 
-En este archivo podemos crear las funciones con nobre test_funcion(), en estas podemos incluir sentencias assert que llamen a la función a testear y las podemos comparar con el valor de return esperado. 
+En este archivo podemos crear las funciones con nobre `test_funcion()`, en estas podemos incluir sentencias assert que llamen a la función a testear y las podemos comparar con el valor de return esperado. 
 
-```
+```python
 import operaciones
 
 def test_suma():
@@ -106,6 +105,5 @@ def test_suma():
 
 ```
 
-También se provocará un error  
-
-
+También se provocará un error, el cual se verá en un assert fallido. Por lo tanto, es importante revisar ambas partes, test y código,
+de errores. 
