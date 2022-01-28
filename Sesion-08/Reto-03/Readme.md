@@ -1,8 +1,6 @@
  
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 03
 
 ### OBJETIVO 
 
@@ -10,11 +8,21 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Python 3
+2. Flask
+3. WTFForms
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Manipular rutas o parámetros para realizar operaciones, no es lo mas fácil de
+utilizar, verdad? Vamos a agregar un formulario para nuestras operaciones:
+
+1. La ruta principal `/`, va a mostrar un formulario con los siguientes elementos:
+	- Input y label para los números
+	- Select para elegir la operación a realizar
+	- Botoón de enviar formulario
+2. Al enviar el formulario, se deberá redirigir a otra página con el resultado
+
 
 <details>
 
@@ -23,7 +31,4 @@ Agrega las instrucciones generales del ejemplo o reto
 	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
 

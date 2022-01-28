@@ -12,14 +12,21 @@ Crear una página
 
 #### DESARROLLO
 
-- Crea una página capas de calcular la suma, resta o multiplicación de dos números
-- Tanto la operación como los números se deben ingresar como parámetros dentro de la ruta
--En la ruta / coloca una descripción breve del programa
+Vamos a crear una aplicación web capaz de hacer algunas operaciones simples.
+Si bien la usabilidad no será el fuerte de esta app, nos servirá para ir apalancando
+los conceptos de desarrollo web.
+
+
+
+1. Crea una página capas de calcular la suma, resta o multiplicación de dos números.
+2. Tanto la operación como los números se deben ingresar como parámetros dentro de la ruta.
+3. En la ruta / coloca una descripción breve del programa.
+4. Regresa el resultado de la operación en texto dentro de algún tag HTML.
 
 Ejemplo:
 http://127.0.0.1:5000/calculadora?operacion=suma&n1=10&n2=4
 
-Pista:Puedes utilizar varias veces request para tener distintos parametros
+**Pista**: Puedes utilizar varias veces request para tener distintos parametros
 
 <details>
 	Codigo
