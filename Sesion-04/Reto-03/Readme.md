@@ -13,9 +13,16 @@
 2. Código de reto 2
 
 #### DESARROLLO
-Modifica el código del reto 2 para convertir los parametros ruedas, medio y velocidad para que no se puedan modificar desde afuera
 
-Verifica que no se permita el acceso a los parametros desde afuera de la clase.
+El kilometraje es un elemento que debemos encapsular: si bien, cualquier persona puede conocer el cuentakilómetros
+de un auto, no esperamos que pueda modificarlo. Después de todo, ¡no queremos vender autos como el papá de Matilda!
+
+1. Convierte el atributo de kilometraje en un valor privado. Si no lo tiene, créalo.
+2. Crea una función para revisar el kilometraje.
+3. Agrega un nuevo atributo: capacidad del tanque. Haz que se también un elemento privado, pero accesible a través de
+   un método.
+4. Crea un método privado: Activar alarma. Puede ser sólo imprimar un mensaje.
+
 
 <details>
 

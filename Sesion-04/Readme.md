@@ -3,8 +3,8 @@
 ## :dart: Objetivos
 
 - Conoceras los fundamentos de POO
-- Podrás crear objetos a partir de una clase
 - Podrás escribir clases con métodos y atributos
+- Podrás crear objetos a partir de una clase
 - Usarás encapsulamiento en los elementos de clase
 - Crearás clases heredadas
 
@@ -12,10 +12,9 @@
 ## 📂 Organización de la clase
 
 - Clases y objetos
-
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
-- Métodos de clase
+- Atributos y métodos
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 - Encapsulamiento 

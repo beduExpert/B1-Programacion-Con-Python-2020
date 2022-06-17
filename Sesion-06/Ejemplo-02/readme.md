@@ -11,7 +11,7 @@
 1. Python 3
 
 #### DESARROLLO
-Los archivos csv (comma separated values), son un formato de archivos conformados por valores separados por una coma, como si fueran un tabla, son muy usados para almacenar sets de datos.
+Los archivos CSV (comma separated values), son un formato de archivos conformados por valores separados por una coma, como si fueran un tabla, son muy usados para almacenar sets de datos.
 
 Existen variantes que usan otro carcter para separar los valores, como lo son los tsv(tab separatted values), que usa tabuladores para separar los valores. Estos últimos suelen utilizarse para almacener corpus de oraciones para análisis de lenguaje natural.
 
@@ -21,7 +21,7 @@ Funcionan de manera similar a los archivos, con conversión del archivo a listas
 La forma de utilizarla, conserva ciertas similitudes con el acceso a otros tipos de archivos
 
 `archivo_csv.py`
-```
+```python
 import csv 
 # Escribir archivo
 with open("ejemplo.csv", 'w') as fcsv: 
@@ -41,7 +41,7 @@ Aunque por defecto el CSV se maneja como listas, es posible que también se mane
 
 `archivo_csv_dict.py`
 
-```
+```python
 import csv
 
 #Se puede usar with también con .csv

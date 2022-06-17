@@ -1,77 +1,65 @@
  
-
 	
-## Reto tests 1
+## Calculadora web 
 
 ### OBJETIVO 
-
-- Escribir tests unitarios
-- Ejecutar tests unitarios
+Crear una página 
 
 #### REQUISITOS 
 
 1. Python 3
-2. Pytest
+2. Flask
 
 #### DESARROLLO
 
-1. Crea una función que genere  el promedio de dos números (inserta un error de forma intencional) 
-2. Crea un test para la función anterior
-3. Ejecuta el test
-4. Haz las correcciones a la función
-5. Vuelve a ejecutar el test
+Vamos a crear una aplicación web capaz de hacer algunas operaciones simples.
+Si bien la usabilidad no será el fuerte de esta app, nos servirá para ir apalancando
+los conceptos de desarrollo web.
 
+
+
+1. Crea una página capas de calcular la suma, resta o multiplicación de dos números.
+2. Tanto la operación como los números se deben ingresar como parámetros dentro de la ruta.
+3. En la ruta / coloca una descripción breve del programa.
+4. Regresa el resultado de la operación en texto dentro de algún tag HTML.
+
+Ejemplo:
+http://127.0.0.1:5000/calculadora?operacion=suma&n1=10&n2=4
+
+**Pista**: Puedes utilizar varias veces request para tener distintos parametros
 
 <details>
-	Se crea el archivo promedio.py:
+	Codigo
 
-	def promedio(num1 ,num2):
-    	return (num1 - num2)/2
+	from flask import Flask, render_template, url_for
+	from flask import request
 
-	Y se crea el test_promedio.py:
+	app = Flask(__name__)
 
-	from promedio import promedio
+	@app.route('/')
+	def index():
+		return "Programa de calculadora"
 
-	def test_promedio():
-		assert promedio(2,4) == 3
-		assert promedio(10,11) == 10.5
-		assert promedio(4,4) == 4
 
-	
-	Si ejecutamos el test obtenemos
 
-	$ pytest test_promedio.py 
-	======================================================================================== test session starts ========================================================================================
-	platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
-	rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Reto-01
-	plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-	collected 1 item                                                                                                                                                                                    
+	@app.route('/calculadora')
+	def saluda():
+		operacion = request.args.get('operacion', 'mas')
+		n1 = request.args.get('n1', '0')
+		n2 = request.args.get('n2', '0')
+		if operacion == "mas":
+			res = int(n1) + int(n2)
+		elif operacion == "menos":
+			res = int(n1) - int(n2)
+		elif operacion == "por":
+			res = int(n1) * int(n2)
+		elif operacion == "entre":
+			res = int(n1) / int(n2)
+		return "{} {} {} es {}".format(n1,operacion,n2,res)
 
-	test_promedio.py F                                                                                                                                                                            [100%]
 
-	============================================================================================= FAILURES ==============================================================================================
-	___________________________________________________________________________________________ test_promedio ___________________________________________________________________________________________
-
-		def test_promedio():
-	>       assert promedio(2,4) == 3
-	E       assert -1.0 == 3
-	E        +  where -1.0 = promedio(2, 4)
-
-	test_promedio.py:4: AssertionError
-	========================================================================================= 1 failed in 0.04s =========================================================================================
-
-	Si corregimos la función promedio 
-	$ pytest test_promedio.py 
-	======================================================================================== test session starts ========================================================================================
-	platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
-	rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Reto-01
-	plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-	collected 1 item                                                                                                                                                                                    
-
-	test_promedio.py .                                                                                                                                                                            [100%]
-
-	========================================================================================= 1 passed in 0.02s =========================================================================================
-		
-
+	if __name__ == "__main__":
+		app.run(debug=True)
 </details> 
+
 

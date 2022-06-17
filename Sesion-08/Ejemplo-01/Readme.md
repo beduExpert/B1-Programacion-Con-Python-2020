@@ -1,111 +1,95 @@
 
-
-## Pytest básicos
+## Introduccióm a Flask
 
 ### OBJETIVO
 
-- Realizar tests unitarios usando Pytest
-- Ejecutar Pytest desde la terminal
+- Crear una página utilizando Flask
+- Mostrar templates 
 
 #### REQUISITOS
 
 1. Python 3
-2. Pytest
+2. Flask instalado
 
 #### DESARROLLO
 
-Pytest es un paquete que nos permite automatizar pruebas unitarias de software escrito en Python.
+Flask es un framework minimalista escrito en Python que permite crear aplicaciones web rápidamente y con un mínimo número de líneas de código. 
 
-Si no tienes instalado Pytest, puedes instalarlo usando PIP
-
-```
-$pip install pytest
-```
-
-Al utilizar Pytest, se suelen utilizar sentencias assert, este tipo de sentencias se evaluan, en caso de resultar True la ejecución de un programa continua, en caso contrario se lanza una señal de error.
-
-Para realizar nuestro primer ejercicio de Pytest, necesitamos crear un módulo con las funciones a utilizar.
+Para utilizar flask es necesario instalarlo e importarlo, no está disponible desde la libreria estandar, pero si desde pip
 
 ```
-def suma(a , b=0):
-    return a + b
+pip installl flask
+```
+Para especificar la ruta que se ejecutara desde una dirección es necesario aplicar un decorador @app.route(ruta).
 
-def producto(a,b=1):
-    return a*b
+El siguiente código muestra como crear una página que imprime "Hola Mundo", debido a que index se encuentra decorado con '/', la entrada será directa
 
 ```
+from flask import Flask
 
-Para usar pytest creamos otro archivo .py, cuyo nombre comienza por test. En el cual importamos el módulo con las funciones a probar.
+app = Flask(__name__)
 
-En este archivo podemos crear las funciones con nobre test_funcion(), en estas podemos incluir sentencias assert que llamen a la función a testear y las podemos comparar con el valor de return esperado. 
+@app.route('/')
+def index():
+    return "Hola Mundo!"
 
-```
-import operaciones
-
-def test_suma():
-    assert operaciones.suma(2,3) ==5
-    assert operaciones.suma(2)==2
-
-def test_producto():
-    assert operaciones.producto(3,5) == 15
-    assert operaciones.producto(2) == 2
-
-
+if __name__ == "__main__":
+    app.run(debug=True)% Permite ver opciones de depuración en caso de errores
 ```
 
-Para ejecutar la prueba podemos dirigirnos en terminal a la carpeta contenedora de nuestro proyecto y ejecutamos
+Al ejecutarse este programa muestra en la terminal:
 ```
-$pytest test_operaciones.py
+ python flask3.py 
+ * Serving Flask app "flask3" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 291-567-355
+127.0.0.1 - - [26/May/2020 15:29:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2020 15:31:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2020 15:31:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2020 15:31:36] "GET /static/css/main.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2020 15:33:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2020 15:33:48] "GET /static/css/main.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2020 15:34:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2020 15:34:22] "GET /static/css/main.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2020 15:34:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2020 15:34:23] "GET /static/css/main.css HTTP/1.1" 304 -
 ```
-En este caso la prueba es aprobada así que vemos el siguiente mensaje
-```
-$ pytest test_operaciones.py
-======================================================================================== test session starts ========================================================================================
-platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
-rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-01
-plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-collected 2 items                                                                                                                                                                                   
+En el cual nos indica que para ver la página en ejecución debemos ir a: http://127.0.0.1:5000/  en un navegador.
 
-test_operaciones.py ..                                                                                                                                                                        [100%]
-
-========================================================================================= 2 passed in 0.02s =========================================================================================
+Si en lugar de querer ver un texto en la página queremos mostrar un template .html podemos retornar render_template como en el siguiente ejemplo.
 ```
+from flask import Flask, render_template
 
-En caso de de que la función evaluada contenga errores, por ejemplo si modificamos la función suma de la siguiente manera 
-```
-def suma(a , b=0):
-    return a - b
-```
-Podemos ver la siguiente salida en la terminal
-```
-======================================================================================== test session starts ========================================================================================
-platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
-rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-01
-plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-collected 2 items                                                                                                                                                                                   
+app = Flask(__name__)
 
-test_operaciones.py F.                                                                                                                                                                        [100%]
+@app.route('/')
+def index():
+    return render_template('pagina.html')
 
-============================================================================================= FAILURES ==============================================================================================
-_____________________________________________________________________________________________ test_suma _____________________________________________________________________________________________
-
-    def test_suma():
->       assert operaciones.suma(2,3) ==5
-E       assert -1 == 5
-E        +  where -1 = <function suma at 0x7f491594f830>(2, 3)
-E        +    where <function suma at 0x7f491594f830> = operaciones.suma
-
-test_operaciones.py:4: AssertionError
-==================================================================================== 1 failed, 1 passed in 0.03s ====================================================================================
-```
-De forma similar se debe tener cuidado al crear las funciones test, por que si existe algún error en ella por ejemplo
-```
-def test_suma():
-    assert operaciones.suma(2,3) ==4
-    assert operaciones.suma(2)==2
+if __name__ == "__main__":
+    app.run(debug=True)
 
 ```
 
-También se provocará un error  
+En este caso el código de pagina.html es sencillo.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    Hola Bedu 222
+</body>
+</html>
+```
+Recuerda que por default flask busca que el archivo .html se encuentre en la carpeta templates
 
 

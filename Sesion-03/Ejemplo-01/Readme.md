@@ -1,22 +1,37 @@
 
  
 	
-## Args y kwargs
-### OBJETIVO 
+## Argumentos, args y kwargs
+### Objetivo 
 
+- Utilizar argumentos opcionales y en diferente orden
 - Obtener un numero de argumentos no determinado usando args
 - Obtener argumentos con nombre usando kwargs
 
-#### REQUISITOS 
+#### Requisitos 
 
 1. Python 3 
 
-#### DESARROLLO
+#### Desarrollo
 
-Existen dos tipos de argumentos en Python: los convencionales y aquellos que están sujetos a un nombre específico, generalmente identificados como args (arguments) y kwargs (keyword arguments), respectivamente. 
+Los argumentos tienen más propiedades de las que hemos visto en la sesión anterior. En primer lugar, puede ser opcionales,
+al agregarse un valor por defecto, y así también, se pueden indicar por nombre, cambiando incluso su posición.
+
+```python
+def funcion(arg1, arg2, arg_opcional=0):
+    print(arg1, arg2, arg_opcional)
+
+funcion(arg2="Dos", arg1="Uno")  # Uno Dos 0
+```
+
+Los argumentos opcionales son útiles cuando no queremos que siempre se indiquen, y llevan un valor por defecto, por lo general un valor que haga sentido a la función en cuestión.
+
+Llamando a los argumentos por nombre, con su nombre seguido de un `=`, también se puede cambiar su orden de llamado.
+
+Así también, aparte de estos argumentos convencionales, existen otros dos tipos de argumentos en Python: aquellos que están sujetos a un nombre específico, generalmente identificados como args (arguments) y kwargs (keyword arguments), respectivamente. 
 
 Para obtener un número indeterminado de argumentos usamos *args, los argumentos en *args se consideran una tupla y se puede iterar sobre ellos.
-```
+```python
 def imprime(*a2gs):  
     for arg in a2gs:  
         print (arg) 

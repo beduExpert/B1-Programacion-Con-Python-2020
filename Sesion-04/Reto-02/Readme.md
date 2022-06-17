@@ -12,11 +12,19 @@
 
 #### DESARROLLO
 
-1. Modifica el código del reto 1 para aceptar los parametros en un constructor
-2. Crea un método que __str__ que devuelva una descripcion del objeto
-3. Crea un método Avanzar (puede solo imprimir un mensaje)
-4. Modifica la creacion a objetos para utilizar el constructor
-5. Ejecuta los métodos creados
+
+Con lo recién aprendido, podemos mejorar nuestros objetos para mantener control de los autos usados.
+La mejora mas lógica que podemos hacer, es utilizar constructores para simplificar los objetos.
+Utilizaremos también otros métodos implícitos para facilitar su uso.
+
+
+1. Modifica el código del Reto 1 para aceptar los parametros en un constructor.
+1. Guarda los parámetros como atributos para la clase.
+1. Elimina funciones para crear o editar atributos que ya no sean necesarias.
+1. Crea un método que `__str__` que devuelva una descripcion del objeto.
+1. Crea un método Avanzar, que aumente el kilometraje, y opcionalmente imprima un mensaje.
+1. Modifica la creacion a objetos para utilizar el constructor.
+1. Utiliza los métodos creados para mostrar la información de los autos.
 
 <details>
 	class Vehiculo:

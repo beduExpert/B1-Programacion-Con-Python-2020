@@ -1,6 +1,4 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
 ## Polimorfismo
 
 ### OBJETIVO
@@ -15,11 +13,11 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Se refiere a la habilidad de objetos de distintas clases a responder a un mismo mensaje. Puede ser mediante herencia o mediante clases diferentes, lo que se conoce en Python.
+Polimorfismo se refiere a la habilidad de objetos de distintas clases a responder a un mismo mensaje. Puede ser mediante herencia o mediante clases diferentes.
 
 Por ejemplo, se puede llamar a un método con el mismo nombre y el comportamiento será distinto dependiendo de la clase
 
-```
+```python
 #Se pueden crear métodos con el mismo nombre para distintas clases, implicando un comportamiento distinto
 class Persona:
     def saludar(self):
@@ -44,7 +42,7 @@ for objeto in lista:
 ```
 Una variante del polimorfismo es la sobrecarga de métodos, mediante la cuál en una clase hijo es posible re-escribir un método de la clase padre.
 
-```
+```python
 #En este ejemplo se sobrecarga el método mensaje
 class Persona():
      def __init__(self):
@@ -64,7 +62,7 @@ obrero_planta.mensaje()
 ```
 De manera similar es posible sobrecargar algunos operadores
 
-```
+```python
 
 # Debido a que todas las clases heredan del objeto de clase, también es posible sobre cargar 
 # algunos operadores

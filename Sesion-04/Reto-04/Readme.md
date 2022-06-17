@@ -11,9 +11,17 @@
 2. Código de reto 3
 
 #### DESARROLLO
-- A partir de la clase vehiculo crea clases heredadas para vehiculos acuaticos, terrestres y aereos
-- Crea un metodo especifico para cada clase
-- Crea un objeto (o redefine) de cada clase
+
+La venta de autos usados continúa siendo un éxito, tanto así, que han llegado los primeros autos electrícos a la compañía.
+Sabemos que funcionan de forma similar a los autos de gas, pero también tienen diferencias.
+Utilicemos la herencia para poder agregar estos nuevos autos a nuestro programa.
+
+1. Crear una clase Vehículo la cual sea genérica: Que no tenga nada de manejo del auto a gasolina o electrico.
+2. Heredar de Vehiculo, para crear la clase VehiculoGas: Este tendrá la implementación para vehículos a gasolinas,
+   como por ejemplo, un tanque de gas y su capacidad.
+3. Volver a hereder de Vehiculo, ahora con otra clase: VehiculoElectrico. Aquí colocarás elementos de un auto electrico,
+   por ejemplo, la capacidad de sus baterías.
+
 
 <details>
 	class Vehiculo:

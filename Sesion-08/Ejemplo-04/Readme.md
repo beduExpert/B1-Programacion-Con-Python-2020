@@ -1,76 +1,75 @@
 
-## Parametrización de test
+## Rutas avanzadas
 
 ### OBJETIVO
 
-- Crear test con argumentos parametrizados
+- Crear páginas con múltiples rutas
+- Incluir parámetros en las rutas
 
 #### REQUISITOS
 
-1. Pytest
-2. Python 3
+1. Python 3
+2. Flask
 
 #### DESARROLLO
 
-Cómo hemos visto anteriormente es posible crear múltiples tests para la misma funciónm y cada uno de estos puede tener distintos asserts, por ejemplo:
+No siempre queremos que el formato de la ruta de nuestra página sea como las vistas en el ejemplo pasado, por ejemplo puede ser que queramos que el formato de nuestra ruta sea el siguiente:
+```
+http://127.0.0.1:5000/nombre/param1/param2
+```
+
+Lo cual es mucho mas legible
+
+Un ejemplo de este tipo de ruta la podemos lograr con el siguiente decorador:
+```
+@app.route('/parametros/<nombre>')
 
 ```
-import operaciones
-import pytest
+Además podemos generar múltiples decoradores sobre un mismo método, lo cual puede ser útil en caso de que no se otorgue la totalidad de parámetros-
 
-def test_suma():
-    assert operaciones.suma(2,3) ==5
-    assert operaciones.suma(2,0)==2
-
-
-def test_suma_string():
-    resultado = operaciones.suma('Hola ', 'Mundo')
-    assert resultado == 'Hola Mundo'
-
-def test_suma_float():
-    assert operaciones.suma(3.1,3.1)==6.2
-    assert operaciones.suma(12.5,1.2)==13.7
 ```
-Pero ésta forma puede tener el problema de ser muy repetitiva al momento de escribir código.
-
-Otra forma de escribir este set de pruebas, utiliza el mark parametrize, que recibe como argumentos:
-- Una cadena con el nombre de los parámetros
-- Una lista que tenga los parámetros en tuplas
-
-Los parámetros deben proporcionarse a la función test
-
-El mismo set de pruebas utilizando parametros queda de esta manera
+@app.route('/parametros')
+@app.route('/parametros/<nombre>')
+@app.route('/parametros/<nombre>/<edad>')
 ```
-import operaciones
-import pytest
+En caso de que necesitemos que uno de los datos recibidos no sea de tipo string, podemos indicarlo en el decorador.
+```
+@app.route('/parametros/<nombre>/<int:edad>')
+```
+Los mismos parámetros dados en el decorador deben especificarse como entradas del método.
 
-@pytest.mark.parametrize('num1, num2, resultado',[
-                    (2,3,5),
-                    (2,0,2),
-                    ('Hola ', 'Mundo', 'Hola Mundo'),
-                    (3.1, 3.1, 6.2),
-                    (12.5, 1.2, 13.7)
-                ])
-def test_suma(num1, num2, resultado):
-    assert operaciones.suma(num1, num2)==resultado 
-
+```
+@app.route('/parametros')
+@app.route('/parametros/<nombre>')
+@app.route('/parametros/<nombre>/<int:edad>')
+def recibe_parametros(nombre="humano", edad = 0):
+    return ("nombre   {}\n edad    {} años".format(nombre,edad))
 
 ```
 
-El resultado al ejecutar
+El código completo del ejemplo es el siguiente:
 ```
-$pytest test_operaciones_param.py -v
-======================================================================================== test session starts ========================================================================================
-platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/luisams/anaconda3/bin/python
-cachedir: .pytest_cache
-hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-04/.hypothesis/examples')
-rootdir: /home/luisams/Documentos/bedu/B1-Programacion-Con-Python-2020/Sesion-08/Ejemplo-04
-plugins: doctestplus-0.5.0, arraydiff-0.3, astropy-header-0.1.2, hypothesis-5.5.4, remotedata-0.3.2, openfiles-0.4.0
-collected 5 items                                                                                                                                                                                   
+from flask import Flask, render_template, url_for
 
-test_operaciones_param.py::test_suma[2-3-5] PASSED                                                                                                                                            [ 20%]
-test_operaciones_param.py::test_suma[2-0-2] PASSED                                                                                                                                            [ 40%]
-test_operaciones_param.py::test_suma[Hola -Mundo-Hola Mundo] PASSED                                                                                                                           [ 60%]
-test_operaciones_param.py::test_suma[3.1-3.1-6.2] PASSED                                                                                                                                      [ 80%]
-test_operaciones_param.py::test_suma[12.5-1.2-13.7] PASSED  
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Programa de ejemplo"
+
+@app.route('/parametros')
+@app.route('/parametros/<nombre>')
+@app.route('/parametros/<nombre>/<int:edad>')
+def recibe_parametros(nombre="humano", edad = 0):
+    return ("nombre   {}\n edad    {} años".format(nombre,edad))
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
 ```
+Al ejecutar el servidor y entrar a las siguientes rutas tenemos las siguientes salidas
+- http://127.0.0.1:5000/parametros/luis/8   nombre luis edad 8años
+- http://127.0.0.1:5000/parametros/karla  nombre karla edad 0 años
+- http://127.0.0.1:5000/parametros nombre humano edad 0 años
+- http://127.0.0.1:5000/parametros/lalo/nueve ERRROR
+

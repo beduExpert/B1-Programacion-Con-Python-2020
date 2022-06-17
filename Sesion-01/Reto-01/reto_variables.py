@@ -1,13 +1,11 @@
-print("inserta número")
-a = input()
-print("inserta otro número") 
-b = input()
+a = input("Inserta un número entero: ")
+b = input("Inserta otro número: ")
 
 num1 = int(a)
 num2 = int(b)
 
-concatena = a+b
 suma = num1+num2
+concatena = a+b
 
-print(concatena)
-print(suma)
+print("La suma de ambos números es:", suma)
+print("La concatenación de ambos es:", concatena)

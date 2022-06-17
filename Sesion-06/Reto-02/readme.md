@@ -11,14 +11,14 @@
 #### DESARROLLO
 
 Basándose en el reto anterior, y con el uso de la librería csv, crea un archivo csv, con los siguientes datos:
- *  modelo de auto,
+ * Modelo de auto,
  * color 
- * nivel de equipamiento(bajo, medio,alto)
+ * Nivel de equipamiento(bajo, medio,alto)
  * Fecha de captura (no ingresado por el usuario)
 
  Para obtener la fecha de captura puedes usar datetime.datetime.now() del paquete datetime
 
-```
+```python
 Inserte nombre del auto: Sentra 
 Inserte color: rojo
 inserte nivel de equipo:medio

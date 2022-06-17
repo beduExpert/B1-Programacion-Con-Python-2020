@@ -2,8 +2,8 @@
 
 ## :dart: Objetivos
 
-- Incluir ciclos en nuestros programas
 - Utilizar listas, sets, tuplas
+- Incluir ciclos en nuestros programas
 - Utilizar diccionarios
 - Utilizar funciones
  

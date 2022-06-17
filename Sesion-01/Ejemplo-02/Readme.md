@@ -1,38 +1,47 @@
 
-## Tipos de dato
+## Variables y tipos de datos
 
-### OBJETIVO
+## Objetivos
 
-- Usar los distintos tipos de datos deisponibles en Python
-- Utiilizar funciones de cast para hacer conversiones de tipo
+- Declarar variables, manipularlas y obtenerlas mediante `input`
+- Usar los distintos tipos de datos disponibles en Python
+- Utilizar funciones de cast para hacer conversiones de tipo
 
-#### REQUISITOS
+### Requisitos
 
 1. Python 3
 
-#### DESARROLLO
-Tipos de datos en Python.
-- Numéricos:   
+### Desarrollo
 
-        - int: Números enteros
+#### Variables
 
-        - float: Números con punto flotante
+Una variable te permite asignar datos a un elemento:
 
-        - complex: Numeros complejos
+```python
+nombre = "Beto"
+edad = 20
+```
 
-- Texto:
+Las variables pueden tener cualquier nombre que no utilice el lenguaje. Tampoco pueden
+comenzar con números, o llevar otro signo que sea el guión bajo.
 
-        - string
+### Tipos de datos en Python.
+Python permite declarar cualquier tipo de dato en Python. Sin embargo, es importante
+reconocer el tipo de dato con el cual trabajamos, debido a que es un lenguaje **fuertemente tipado**,
+o sea, no suele convertir los datos por nosotros. Entre los datos básicos están:
 
-- Booleanos:
+* Numéricos:   
+    - int: Números enteros.
+    - float: Números con punto flotante.
+    - complex: Numeros complejos.
+* Texto:
+    - string: Una o varios caracteres.
+* Booleanos: True(Verdadero) o False(Falso).
+* None: Sin ningún valor (vacío)
 
-        - True
+El programa `conversion_de_datos.py` Aborda los distintos tipos de datos en Python.
 
-        - False
-
-El programa conversion_de_datos.py Aborda los distintos tipos de datos en Python.
-
-La función type() retorna el tipo de dato de la variable que tenga como argumento.
+La función `type()` retorna el tipo de dato de la variable que tenga como argumento.
 ```
 #tipos de dato numéricos
 entero = 4
@@ -62,13 +71,27 @@ print(verdadero)
 print("Es de tipo:")
 print(type(verdadero))
 ```
-El programa tipos_de_dato.py muestra como realizar cast para manipular el tipo de dato de una variable.
 
-int() Cambia a tipo entero.
+### Convirtiendo datos (casting)
 
-float() Cambia a tipo float.
+Convertir datos de un tipo a otro es una tarea importante en Python. En algunas situaciones, por ejemplo,
+al recibir datos por el usuario mediante `input`, siempre recibimos cadenas (str). Si en este caso, esperábamos un número (int o float),
+entonces hay que convertirlo:
 
-str() Cambia a tipo string.
+```python
+numero = input("Ingresa un número entero: ")
+numero_entero = int(numero)
+numero_cuadrado = numero_entero ** 2
+print("Tu numero al cuadrado es:", numero_cuadrado)
+```
+
+El programa `tipos_de_dato.py` muestra como realizar cast para manipular el tipo de dato de una variable.
+
+* int() Cambia a tipo entero.
+* float() Cambia a tipo float.
+* str() Cambia a tipo string.
+
+Si no se puede hacer el casting, recibiremos un error.
 
 ```
 #Se puede definir números como cadenas si se encierran en comillas
