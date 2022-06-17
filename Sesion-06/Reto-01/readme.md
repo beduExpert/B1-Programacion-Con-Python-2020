@@ -20,13 +20,13 @@ Inserte nombre del auto: Rio
 Inserte color: rojo
 inserte nivel de equipo:medio
 Inserte precio: 210 000
-Agregar otro auto (s/N)? s
+Agregar otro carro (s/N)? s
 
 Inserte nombre del auto: swift
 Inserte color: amarillo
 inserte nivel de equipo:bajo
-Inserte precio: 11 111
-Agregar otro auto (s/N)? N
+Inserte precio: 11111
+Agregar otro carro (s/N)? N
 ```
 Para concatenar a un archivo, puedes usar el tipo de acceso 'a' (append)
 
@@ -42,7 +42,7 @@ Para concatenar a un archivo, puedes usar el tipo de acceso 'a' (append)
             autos_file.write("{}\t{}\t{}\t{}\n".format(nombre, color, equipo,precio))
         valid = False
         while not valid:
-            c = input("Agregar otro hotel (s/N)? ")
+            c = input("Agregar otro carro (s/N)? ")
             c = c.lower()
             if c.startswith('s'):
                 continuar = True
